@@ -1,0 +1,154 @@
+---
+import { Clock3, Palette, Sparkles } from "@lucide/astro";
+import HeroSplit from "@components/HeroSplit.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+import SectionIntro from "@components/SectionIntro.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { asset, projects, styles } from "@data/site";
+---
+
+<BaseLayout
+  title="Квиз по стилю интерьера — AURUM"
+  description="Ответьте на несколько вопросов и получите персональную подборку стиля, палитры, материалов и референсов для интерьера."
+>
+  <HeroSplit
+    eyebrow="Найдите свой интерьер"
+    title="Квиз по стилю интерьера"
+    text="Ответьте на несколько простых вопросов — и получите подборку стилей, которые подходят именно вам."
+    image={asset.hero}
+    imageAlt="Светлая гостиная с теплым деревом и большим диваном"
+    primaryHref="#quiz"
+    primaryLabel="Начать квиз"
+    secondaryHref="/portfolio/"
+    secondaryLabel="Смотреть примеры"
+    note="6 вопросов · около 2 минут"
+  />
+
+  <section class="quiz-shell" id="quiz" data-quiz>
+    <div class="quiz-progress">
+      <span data-quiz-progress>1 / 6</span>
+      <span>Подбор стиля</span>
+    </div>
+    <p class="quiz-status" data-quiz-status aria-live="polite"></p>
+
+    <div class="quiz-step" data-quiz-step>
+      <SectionIntro align="center" title="Какая цветовая палитра вам ближе?" text="Выберите то, что откликается больше всего." />
+      <div class="choice-grid">
+        <label class="choice-card">
+          <input type="radio" name="palette" value="calm" />
+          <span class="choice-body">
+            <img src={asset.moodboard} alt="Светлая палитра из камня, дерева и мягкого текстиля" loading="lazy" decoding="async" />
+            <strong>Светлая и теплая</strong>
+            <span>Бежевые, песочные, молочные оттенки.</span>
+          </span>
+        </label>
+        <label class="choice-card">
+          <input type="radio" name="palette" value="calm" />
+          <span class="choice-body">
+            <img src={asset.hero} alt="Нейтральная гостиная с графитовыми деталями" loading="lazy" decoding="async" />
+            <strong>Спокойная и нейтральная</strong>
+            <span>Серые, белые и графитовые оттенки.</span>
+          </span>
+        </label>
+        <label class="choice-card">
+          <input type="radio" name="palette" value="warm" />
+          <span class="choice-body">
+            <img src={asset.kitchen} alt="Теплая кухня с дубом и камнем" loading="lazy" decoding="async" />
+            <strong>Теплая и насыщенная</strong>
+            <span>Терракота, шоколад, оливковые тона.</span>
+          </span>
+        </label>
+        <label class="choice-card">
+          <input type="radio" name="palette" value="contrast" />
+          <span class="choice-body">
+            <img src={asset.bedroom} alt="Спальня с контрастными темными деталями" loading="lazy" decoding="async" />
+            <strong>Контрастная</strong>
+            <span>Черный, белый, акцентные фактуры.</span>
+          </span>
+        </label>
+      </div>
+      <div class="quiz-controls">
+        <span></span>
+        <button class="button button-dark" type="button" data-quiz-next>Далее</button>
+      </div>
+    </div>
+
+    {[
+      ["Какой сценарий для вас важнее?", "scenario", ["Семейный уют", "Вечера с друзьями", "Тишина и восстановление", "Эффектный прием гостей"]],
+      ["Какие материалы нравятся?", "materials", ["Натуральное дерево", "Камень и штукатурка", "Металл и стекло", "Текстиль и мягкие фактуры"]],
+      ["Как относитесь к декору?", "decor", ["Минимум предметов", "Несколько выразительных акцентов", "Искусство и винтаж", "Сезонная стилизация"]],
+      ["Что важнее в планировке?", "layout", ["Хранение", "Свет и воздух", "Приватность", "Гибкость сценариев"]],
+      ["Какой формат помощи нужен?", "service", ["Только консультация", "Планировка", "Полный дизайн-проект", "Проект и реализация"]]
+    ].map(([question, name, options], questionIndex) => (
+      <div class="quiz-step" data-quiz-step hidden>
+        <SectionIntro align="center" title={question as string} text="Можно выбрать один ответ. Подборка будет точнее после личной консультации." />
+        <div class="choice-grid">
+          {(options as string[]).map((option) => (
+            <label class="choice-card">
+              <input type="radio" name={name as string} value={option} />
+              <span class="choice-body">
+                <strong>{option}</strong>
+                <span>{questionIndex % 2 === 0 ? "Этот ответ поможет понять ритм жизни и настроение пространства." : "Мы учтем это при подборе материалов и композиции."}</span>
+              </span>
+            </label>
+          ))}
+        </div>
+        <div class="quiz-controls">
+          <button class="button button-outline" type="button" data-quiz-prev>Назад</button>
+          <button class="button button-dark" type="button" data-quiz-next>{questionIndex === 4 ? "Получить результат" : "Далее"}</button>
+        </div>
+      </div>
+    ))}
+
+    <div class="quiz-step" data-quiz-result hidden>
+      <SectionIntro align="center" title="Ваш предварительный результат готов" text="Оставьте контакт, и мы отправим подборку с палитрой, материалами и примерами проектов." />
+      <div class="side-panel">
+        <Palette size={30} stroke-width={1.4} />
+        <h3 data-result-title>Вам близок спокойный современный интерьер</h3>
+        <p data-result-text>Мы бы начали с мягкой нейтральной палитры, натуральных материалов и планировки, где воздух важнее декора.</p>
+      </div>
+      <form class="form-grid" data-lead-form novalidate>
+        <label class="field">
+          <span>Ваше имя*</span>
+          <input required name="name" placeholder="Как к вам обращаться?" />
+        </label>
+        <label class="field">
+          <span>E-mail или Telegram*</span>
+          <input required name="contact" placeholder="example@mail.ru" />
+        </label>
+        <button class="button button-dark" type="submit">Получить подборку</button>
+        <p class="form-status" data-form-status aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Что вы получите" title="Персональную подборку стиля и решений" align="center" />
+    <div class="feature-row">
+      <div class="feature-cell">
+        <Sparkles size={26} stroke-width={1.4} />
+        <h3>Подборка стиля</h3>
+        <p>Мы определим стили, которые подходят вашему вкусу и образу жизни.</p>
+      </div>
+      <div class="feature-cell">
+        <Palette size={26} stroke-width={1.4} />
+        <h3>Рекомендации</h3>
+        <p>Предложим цвета, материалы и планировочные идеи.</p>
+      </div>
+      <div class="feature-cell">
+        <Clock3 size={26} stroke-width={1.4} />
+        <h3>Референсы</h3>
+        <p>Подберем интерьеры и детали, которые воплощают будущий образ.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Возможные результаты" title="Примеры стилей, которые может определить квиз" align="center" />
+    <div class="project-grid">
+      {styles.slice(0, 3).map((style, index) => (
+        <ProjectCard title={style.title} meta={style.description} image={projects[index].image} style="Результат квиза" />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

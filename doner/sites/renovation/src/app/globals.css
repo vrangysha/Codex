@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: 1 0 0;
+  --foreground: 0.18 0.022 155;
+  --surface: 0.982 0.006 150;
+  --surface-alt: 0.94 0.018 85;
+  --muted: 0.39 0.028 145;
+  --border: 0.88 0.015 115;
+  --input: 0.93 0.012 115;
+  --primary: 0.39 0.105 150;
+  --primary-foreground: 0.99 0 0;
+  --accent: 0.54 0.12 42;
+  --accent-foreground: 0.99 0 0;
+  --success: 0.44 0.105 150;
+  --success-foreground: 0.99 0 0;
+  --warning: 0.68 0.13 78;
+  --warning-foreground: 0.18 0.03 82;
+  --destructive: 0.5 0.16 28;
+  --destructive-foreground: 0.99 0 0;
+  --ring: 0.62 0.14 82;
+  --radius: 16px;
+  --radius-xl: 24px;
+  --shadow-soft: 0 18px 54px -36px oklch(var(--foreground) / 0.34);
+  --shadow-lift: 0 22px 60px -34px oklch(var(--primary) / 0.36);
+  --font-sans:
+    var(--font-onest), "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+    sans-serif;
+  --font-display:
+    var(--font-geologica), var(--font-onest), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  background: oklch(var(--background));
+  color: oklch(var(--foreground));
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-kerning: normal;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  color: inherit;
+  font-family: var(--font-display);
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+p,
+li,
+dt,
+dd,
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-family: var(--font-sans);
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.18;
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: oklch(var(--accent) / 0.32);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+summary,
+[role="button"],
+a {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 3px solid oklch(var(--ring));
+  outline-offset: 3px;
+}
+
+@layer utilities {
+  .text-measure {
+    max-width: 68ch;
+  }
+
+  .text-measure-narrow {
+    max-width: 54ch;
+  }
+
+  .section-y {
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
+  }
+
+  .fade-up-ready {
+    transform: translateY(0);
+    transition:
+      opacity 240ms var(--ease-out),
+      transform 240ms var(--ease-out);
+  }
+
+  @media (min-width: 768px) {
+    .section-y {
+      padding-bottom: 6rem;
+      padding-top: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-y {
+      padding-bottom: 7.5rem;
+      padding-top: 7.5rem;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

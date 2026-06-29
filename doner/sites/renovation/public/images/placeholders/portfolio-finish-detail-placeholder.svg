@@ -1,0 +1,13 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Finish detail portfolio placeholder</title>
+  <desc id="desc">Non-photographic architectural placeholder for a future finish detail renovation image.</desc>
+  <rect width="960" height="720" fill="#F7F8F4"/>
+  <rect x="104" y="96" width="752" height="528" rx="30" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M172 420H788" stroke="#6D826A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M204 472H756" stroke="#A96938" stroke-width="8" stroke-linecap="round"/>
+  <path d="M238 524H722" stroke="#D9DED2" stroke-width="8" stroke-linecap="round"/>
+  <rect x="204" y="196" width="552" height="132" rx="24" fill="#EEF2EA" stroke="#6D826A" stroke-width="4"/>
+  <path d="M252 262H708" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M304 578H656" stroke="#A96938" stroke-width="4" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <circle cx="222" cy="266" r="26" fill="#A96938" opacity=".14"/>
+</svg>

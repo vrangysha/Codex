@@ -1,0 +1,118 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 40,
+  "latest_batch": "31-40",
+  "asset_principle": "Each website asset is a separate file, no merged contact sheets are counted as production assets.",
+  "latest_batch_assets": [
+    {
+      "number": 31,
+      "file": "31_bouquet-red-roses-card.webp",
+      "archive_path": "assets/images/products/bouquets/31_bouquet-red-roses-card.webp",
+      "category": "product-card",
+      "title": "Букет из красных роз",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Букет из красных роз в премиальной упаковке",
+      "prompt": "Premium ecommerce product card, bouquet of red roses, eucalyptus, cream wrapping paper, satin ribbon, soft pastel studio light, Lumi Fleur style."
+    },
+    {
+      "number": 32,
+      "file": "32_bouquet-white-roses-card.webp",
+      "archive_path": "assets/images/products/bouquets/32_bouquet-white-roses-card.webp",
+      "category": "product-card",
+      "title": "Букет из белых роз",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Белый букет роз и лизиантуса на светлом фоне",
+      "prompt": "Elegant white roses bouquet with lisianthus and greenery, soft cream paper, minimal luxury ecommerce product card, airy premium flower shop photo."
+    },
+    {
+      "number": 33,
+      "file": "33_bouquet-pink-peonies-card.webp",
+      "archive_path": "assets/images/products/bouquets/33_bouquet-pink-peonies-card.webp",
+      "category": "product-card",
+      "title": "Букет из розовых пионов",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Пышный букет из розовых пионов",
+      "prompt": "Pink peony bouquet, blush roses, eucalyptus, matte beige wrapping, satin bow, commercial floral ecommerce card, premium soft lighting."
+    },
+    {
+      "number": 34,
+      "file": "34_bouquet-spring-tulips-card.webp",
+      "archive_path": "assets/images/products/bouquets/34_bouquet-spring-tulips-card.webp",
+      "category": "product-card",
+      "title": "Букет тюльпанов «Весенний»",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Весенний букет из розовых и белых тюльпанов",
+      "prompt": "Spring tulip bouquet, pink and white tulips, fresh green leaves, soft cream studio background, ecommerce catalog product card."
+    },
+    {
+      "number": 35,
+      "file": "35_bouquet-lavender-hydrangeas-card.webp",
+      "archive_path": "assets/images/products/bouquets/35_bouquet-lavender-hydrangeas-card.webp",
+      "category": "product-card",
+      "title": "Букет гортензий «Облако»",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Лавандовый букет из гортензий и белых цветов",
+      "prompt": "Lavender hydrangea bouquet, blue and lilac hydrangeas, white flowers, eucalyptus, premium pastel wrapping, soft ecommerce photo."
+    },
+    {
+      "number": 36,
+      "file": "36_bouquet-white-lilies-card.webp",
+      "archive_path": "assets/images/products/bouquets/36_bouquet-white-lilies-card.webp",
+      "category": "product-card",
+      "title": "Букет белых лилий",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Премиальный букет белых лилий в светлой упаковке",
+      "prompt": "White lilies bouquet with buds and greenery, cream textured wrapping, premium flower shop product card, soft daylight."
+    },
+    {
+      "number": 37,
+      "file": "37_bouquet-pastel-chrysanthemums-card.webp",
+      "archive_path": "assets/images/products/bouquets/37_bouquet-pastel-chrysanthemums-card.webp",
+      "category": "product-card",
+      "title": "Букет хризантем «Пастель»",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Пастельный букет хризантем в кремовой упаковке",
+      "prompt": "Pastel chrysanthemums bouquet, cream and blush petals, fresh greenery, beige wrapping, clean ecommerce floral card."
+    },
+    {
+      "number": 38,
+      "file": "38_bouquet-premium-orchids-card.webp",
+      "archive_path": "assets/images/products/bouquets/38_bouquet-premium-orchids-card.webp",
+      "category": "product-card",
+      "title": "Премиум-букет с орхидеями",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Премиальный букет с орхидеями в подарочной коробке",
+      "prompt": "Premium orchid bouquet in branded gift box, roses and greenery, lavender blush palette, luxury ecommerce product card."
+    },
+    {
+      "number": 39,
+      "file": "39_bouquet-romantic-daisies-card.webp",
+      "archive_path": "assets/images/products/bouquets/39_bouquet-romantic-daisies-card.webp",
+      "category": "product-card",
+      "title": "Романтичный букет ромашек",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Нежный романтичный букет ромашек и полевых цветов",
+      "prompt": "Romantic daisy bouquet with field flowers, white and blush palette, greenery, airy cream background, ecommerce card."
+    },
+    {
+      "number": 40,
+      "file": "40_bouquet-author-mix-card.webp",
+      "archive_path": "assets/images/products/bouquets/40_bouquet-author-mix-card.webp",
+      "category": "product-card",
+      "title": "Авторский микс-букет",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Авторский микс-букет из пионов, роз и сезонных цветов",
+      "prompt": "Florist choice author mixed bouquet, peonies, roses, seasonal flowers, eucalyptus, beige premium wrapping, soft luxury ecommerce card."
+    }
+  ]
+}

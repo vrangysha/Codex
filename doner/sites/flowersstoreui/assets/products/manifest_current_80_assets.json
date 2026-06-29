@@ -1,0 +1,79 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 80,
+  "latest_batch": "71-80",
+  "latest_batch_category": "additional product detail images / large product shots",
+  "latest_batch_assets": [
+    {
+      "number": 71,
+      "file": "71_product-red-roses-detail-image.webp",
+      "archive_path": "assets/images/products/detail/71_product-red-roses-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 72,
+      "file": "72_product-white-roses-detail-image.webp",
+      "archive_path": "assets/images/products/detail/72_product-white-roses-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 73,
+      "file": "73_product-pink-peonies-detail-image.webp",
+      "archive_path": "assets/images/products/detail/73_product-pink-peonies-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 74,
+      "file": "74_product-spring-tulips-detail-image.webp",
+      "archive_path": "assets/images/products/detail/74_product-spring-tulips-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 75,
+      "file": "75_product-blue-hydrangeas-detail-image.webp",
+      "archive_path": "assets/images/products/detail/75_product-blue-hydrangeas-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 76,
+      "file": "76_product-white-lilies-detail-image.webp",
+      "archive_path": "assets/images/products/detail/76_product-white-lilies-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 77,
+      "file": "77_product-alstroemeria-detail-image.webp",
+      "archive_path": "assets/images/products/detail/77_product-alstroemeria-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 78,
+      "file": "78_product-orchid-box-detail-image.webp",
+      "archive_path": "assets/images/products/detail/78_product-orchid-box-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 79,
+      "file": "79_product-daisies-detail-image.webp",
+      "archive_path": "assets/images/products/detail/79_product-daisies-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    },
+    {
+      "number": 80,
+      "file": "80_product-author-mix-detail-image.webp",
+      "archive_path": "assets/images/products/detail/80_product-author-mix-detail-image.webp",
+      "format": "WEBP",
+      "size_px": "1600x1600"
+    }
+  ],
+  "note": "Each latest-batch asset is an individual WEBP file; no contact sheet is included."
+}

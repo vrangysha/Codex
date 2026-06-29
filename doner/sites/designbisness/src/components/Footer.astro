@@ -1,0 +1,54 @@
+---
+import { Send, MapPin, Mail, Phone } from "@lucide/astro";
+---
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section class="footer-brand" aria-label="AURUM">
+      <a class="brand" href="/">
+        <span class="brand-mark">AURUM</span>
+        <span class="brand-subtitle">студия интерьера</span>
+      </a>
+      <p>Создаем продуманные пространства для жизни, отдыха и работы.</p>
+      <div class="socials" aria-label="Социальные сети">
+        <a href="https://instagram.com" aria-label="Instagram">
+          <span aria-hidden="true">IG</span>
+        </a>
+        <a href="https://t.me" aria-label="Telegram">
+          <Send size={18} stroke-width={1.5} />
+        </a>
+      </div>
+    </section>
+
+    <nav class="footer-column" aria-label="Навигация">
+      <h2>Навигация</h2>
+      <a href="/portfolio/">Портфолио</a>
+      <a href="/services/">Услуги</a>
+      <a href="/process/">Этапы работы</a>
+      <a href="/supervision/">Авторский надзор</a>
+      <a href="/quiz/">Квиз</a>
+      <a href="/brief/">Бриф</a>
+    </nav>
+
+    <nav class="footer-column" aria-label="Услуги">
+      <h2>Услуги</h2>
+      <a href="/services/#packages">Дизайн-проект</a>
+      <a href="/services/#compare">Комплектация</a>
+      <a href="/supervision/">Авторский надзор</a>
+      <a href="/services/#faq">Консультация</a>
+    </nav>
+
+    <section class="footer-column contact-column" aria-label="Контакты">
+      <h2>Контакты</h2>
+      <p><MapPin size={15} stroke-width={1.5} /> Москва, ул. Пречистенка, 27</p>
+      <p><Phone size={15} stroke-width={1.5} /> +7 (495) 123-45-67</p>
+      <p><Mail size={15} stroke-width={1.5} /> hello@aurum.studio</p>
+      <a class="button button-outline" href="/brief/">Обсудить проект</a>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <span>© AURUM Studio, 2026</span>
+    <a href="/brief/">Политика конфиденциальности</a>
+    <a href="/brief/">Договор оферты</a>
+  </div>
+</footer>

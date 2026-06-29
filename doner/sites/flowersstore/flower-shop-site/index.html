@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лиора — доставка цветов и букетов по Москве</title>
+  <meta name="description" content="Цветочный магазин Лиора: свежие букеты, авторские композиции и подарки с доставкой по Москве от 2 часов.">
+  <meta property="og:title" content="Лиора — цветы с доставкой по Москве">
+  <meta property="og:description" content="Премиальные букеты, свежие цветы и заботливая доставка в день заказа.">
+  <meta property="og:image" content="assets/social/og-image.webp">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/favicon/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Florist",
+      "name": "Лиора",
+      "image": "assets/social/og-image.webp",
+      "telephone": "+7 495 120-45-70",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Петровка, 24",
+        "addressLocality": "Москва",
+        "addressCountry": "RU"
+      },
+      "openingHours": "Mo-Su 09:00-22:00",
+      "priceRange": "₽₽"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Лиора, главная">
+        <img src="assets/logo/logo-horizontal.svg" alt="Лиора">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="catalog.html">Каталог</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="promotions.html">Акции</a>
+        <a href="about.html">О нас</a>
+        <a href="blog.html">Блог</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+74951204570">+7 495 120-45-70</a>
+        <a class="cart-link" href="cart.html">
+          <span>Корзина</span>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">Цветы сегодня по Москве</p>
+          <h1>Лиора <span>Flowers</span></h1>
+          <p class="hero-lead">Авторские букеты, свежие сезонные цветы и подарочные композиции с доставкой от 2 часов. Собираем аккуратно, фотографируем перед отправкой и бережно привозим получателю.</p>
+          <div class="hero-actions">
+            <a class="btn rose" href="catalog.html">Выбрать букет</a>
+            <a class="btn secondary" href="contacts.html">Собрать индивидуально</a>
+          </div>
+          <div class="hero-proof" aria-label="Преимущества">
+            <div class="proof-item"><strong>2 часа</strong><span>быстрая доставка по Москве</span></div>
+            <div class="proof-item"><strong>Фото</strong><span>покажем букет перед выездом</span></div>
+            <div class="proof-item"><strong>7 дней</strong><span>гарантия свежести цветов</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Чаще всего выбирают</p>
+            <h2>Популярные букеты</h2>
+            <p>Готовые композиции для дней рождения, свиданий, годовщин и тёплых поводов без календаря.</p>
+          </div>
+          <a class="btn secondary" href="catalog.html">Весь каталог</a>
+        </div>
+        <div class="product-grid" data-products="featured" data-limit="4"></div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">По поводу и настроению</p>
+            <h2>Категории</h2>
+            <p>Быстрый путь к удачному подарку: выберите повод, цветовую гамму или формат композиции.</p>
+          </div>
+        </div>
+        <div class="grid three" data-category-grid></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Почему нам доверяют</p>
+            <h2>Флористика без тревоги</h2>
+            <p>Мы берём на себя тонкие детали: свежесть, упаковку, открытку, время вручения и бережный контакт с получателем.</p>
+          </div>
+        </div>
+        <div class="grid four">
+          <article class="info-card">
+            <img class="info-icon" src="assets/icons/icon-freshness.svg" alt="">
+            <h3>Свежие поставки</h3>
+            <p>Цветы приезжают небольшими партиями, поэтому букет выглядит живым и держится дольше.</p>
+          </article>
+          <article class="info-card">
+            <img class="info-icon" src="assets/icons/icon-custom.svg" alt="">
+            <h3>Индивидуальный букет</h3>
+            <p>Подберём состав под повод, бюджет, любимые оттенки и характер получателя.</p>
+          </article>
+          <article class="info-card">
+            <img class="info-icon" src="assets/icons/icon-delivery.svg" alt="">
+            <h3>Доставка от 2 часов</h3>
+            <p>Курьер привезёт букет аккуратно, в воде и с температурной защитой по сезону.</p>
+          </article>
+          <article class="info-card">
+            <img class="info-icon" src="assets/icons/icon-guarantee.svg" alt="">
+            <h3>Гарантия свежести</h3>
+            <p>Если букет приехал не таким, как согласовали, заменим или вернём деньги.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sage">
+      <div class="container feature-band">
+        <div class="feature-copy">
+          <p class="eyebrow">Доставка и забота</p>
+          <h2>Привезём вовремя, даже если вы заказываете в последний момент</h2>
+          <p>Перед выездом отправим фото букета, уточним пожелания к открытке и передадим курьеру аккуратную инструкцию по вручению.</p>
+          <ul class="check-list">
+            <li>Доставка по Москве ежедневно с 09:00 до 22:00.</li>
+            <li>Бесплатно при заказе от 5 000 ₽.</li>
+            <li>Самовывоз из студии на Петровке через 40 минут после подтверждения.</li>
+          </ul>
+          <a class="btn" href="delivery.html">Условия доставки</a>
+        </div>
+        <img src="assets/images/backgrounds/delivery-courier.webp" alt="Доставка букета курьером">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Поводы</p>
+            <h2>Когда хочется сказать красиво</h2>
+            <p>Букеты Лиоры легко адаптировать под личное сообщение: от короткого «скучаю» до торжественного поздравления.</p>
+          </div>
+        </div>
+        <div class="grid four">
+          <article class="info-card"><h3>День рождения</h3><p>Яркие сезонные композиции, открытка и доставка к началу праздника.</p></article>
+          <article class="info-card"><h3>Свидание</h3><p>Романтичные розы, пионы и лавандовые букеты в деликатной упаковке.</p></article>
+          <article class="info-card"><h3>Свадьба</h3><p>Светлая флористика для невесты, гостей и камерного оформления.</p></article>
+          <article class="info-card"><h3>Корпоративный подарок</h3><p>Сдержанные букеты для партнёров, клиентов, офисов и мероприятий.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Отзывы</p>
+            <h2>Получатели улыбаются</h2>
+            <p>Мы особенно внимательно относимся к заказам, которые дарят на расстоянии: вы видите результат до вручения.</p>
+          </div>
+        </div>
+        <div class="grid three">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Заказала букет маме утром, к обеду уже прислали фото и доставили. Всё нежно, свежо и очень красиво».</p>
+            <div class="review-author"><span>Анна</span><span>День рождения</span></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Нужно было срочно поздравить коллегу. Подобрали букет по бюджету, сделали открытку и привезли точно в окно».</p>
+            <div class="review-author"><span>Мария</span><span>Корпоративный заказ</span></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>«Очень понравилось, что флорист уточнила оттенки и упаковку. Букет получился дороже на вид, чем ожидала».</p>
+            <div class="review-author"><span>Екатерина</span><span>Свидание</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Как заказать</p>
+            <h2>Три спокойных шага</h2>
+          </div>
+        </div>
+        <div class="grid three steps">
+          <article class="info-card step-card">
+            <h3>Выберите букет</h3>
+            <p>Откройте каталог, используйте фильтры по поводу, цене и цвету или напишите нам для индивидуального подбора.</p>
+          </article>
+          <article class="info-card step-card">
+            <h3>Уточните детали</h3>
+            <p>Добавьте открытку, упаковку, адрес, дату и удобное окно доставки. Мы подтвердим заказ и пришлём фото.</p>
+          </article>
+          <article class="info-card step-card">
+            <h3>Получатель радуется</h3>
+            <p>Курьер вручит цветы бережно и вовремя. После доставки вы получите уведомление о выполнении заказа.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pattern">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Акции</p>
+            <h2>Выгодные поводы</h2>
+            <p>Сезонные предложения, скидка на первый заказ и готовые подборки для важных дат.</p>
+          </div>
+          <a class="btn secondary" href="promotions.html">Все акции</a>
+        </div>
+        <div class="grid three">
+          <article class="promo-card">
+            <img src="assets/images/banners/banner-first-order.webp" alt="Скидка на первый заказ">
+            <div class="promo-content">
+              <span class="badge">−10%</span>
+              <h3>Первый заказ с промокодом LIORA10</h3>
+              <p>Скидка действует на букеты из каталога при заказе онлайн.</p>
+            </div>
+          </article>
+          <article class="promo-card">
+            <img src="assets/images/banners/banner-two-hour-delivery.webp" alt="Доставка цветов за 2 часа">
+            <div class="promo-content">
+              <span class="badge">Сегодня</span>
+              <h3>Экспресс-доставка за 2 часа</h3>
+              <p>Для популярных букетов и адресов в пределах МКАД.</p>
+            </div>
+          </article>
+          <article class="promo-card">
+            <img src="assets/images/banners/banner-wedding-bouquets.webp" alt="Свадебные букеты">
+            <div class="promo-content">
+              <span class="badge">Свадьба</span>
+              <h3>Комплект для камерной свадьбы</h3>
+              <p>Букет невесты, бутоньерка и композиция на стол в единой гамме.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">FAQ</p>
+            <h2>Частые вопросы</h2>
+          </div>
+        </div>
+        <div class="faq">
+          <article class="faq-item is-open">
+            <button class="faq-question" type="button" aria-expanded="true"><span>Можно ли увидеть букет до доставки?</span><span>−</span></button>
+            <div class="faq-answer">Да. Мы отправляем фото готового букета в мессенджер и выезжаем только после подтверждения.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Что будет, если нужного цветка нет?</span><span>+</span></button>
+            <div class="faq-answer">Флорист предложит замену в той же гамме и ценности. Без согласования состав не меняем.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Можно добавить открытку или подарок?</span><span>+</span></button>
+            <div class="faq-answer">Да, открытку с вашим текстом добавим бесплатно. Свечи, сладости и подарочные наборы можно выбрать при оформлении.</div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false"><span>Работаете с корпоративными заказами?</span><span>+</span></button>
+            <div class="faq-answer">Да. Подготовим букеты для сотрудников, партнёров, ресепшен-зон и мероприятий, предоставим закрывающие документы.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sage">
+      <div class="container feature-band">
+        <img src="assets/images/backgrounds/florist-studio.webp" alt="Флористы собирают букет в студии Лиора">
+        <div class="feature-copy">
+          <p class="eyebrow">SEO</p>
+          <h2>Цветы с доставкой по Москве</h2>
+          <p>Лиора — цветочный магазин в Москве, где можно заказать букет онлайн с быстрой доставкой в день обращения. Мы собираем композиции из роз, пионов, эустомы, гортензии, сезонных цветов и декоративной зелени, подбираем упаковку под повод и отправляем фото перед доставкой.</p>
+          <p>В каталоге есть букеты на день рождения, свидание, свадьбу, годовщину, 8 Марта, День матери, корпоративные события и подарки без повода. Для срочных заказов доступны готовые позиции с доставкой от 2 часов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-panel">
+          <p class="eyebrow">Контакты</p>
+          <h2>Студия на Петровке</h2>
+          <ul class="plain-list">
+            <li><strong>Адрес:</strong> Москва, Петровка, 24</li>
+            <li><strong>Телефон:</strong> <a href="tel:+74951204570">+7 495 120-45-70</a></li>
+            <li><strong>Время:</strong> ежедневно 09:00–22:00</li>
+            <li><strong>Мессенджеры:</strong> Telegram, WhatsApp</li>
+          </ul>
+          <form class="grid" data-simple-form>
+            <label class="field">
+              <span>Ваш телефон</span>
+              <input type="tel" name="phone" placeholder="+7 900 000-00-00" required>
+            </label>
+            <button class="btn" type="submit">Получить консультацию</button>
+          </form>
+        </div>
+        <div class="map-visual" aria-label="Карта: Москва, Петровка, 24">
+          <div class="map-pin">Лиора<br>Петровка</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/logo-horizontal.svg" alt="Лиора">
+          <p>Букеты, композиции и подарки с доставкой по Москве. Собираем с вниманием к оттенкам, деталям и моменту вручения.</p>
+        </div>
+        <div>
+          <h3>Покупателям</h3>
+          <ul>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <li><a href="promotions.html">Акции</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Лиора</h3>
+          <ul>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="checkout.html">Оформление</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Связь</h3>
+          <ul>
+            <li><a href="tel:+74951204570">+7 495 120-45-70</a></li>
+            <li><a href="mailto:hello@liora.flowers">hello@liora.flowers</a></li>
+            <li>Москва, Петровка, 24</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Лиора. Цветочный магазин.</span>
+        <span>Демо-основа для реального e-commerce проекта.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

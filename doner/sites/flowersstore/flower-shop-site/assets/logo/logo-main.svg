@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="420" height="360" viewBox="0 0 420 360">
+    <rect width="420" height="360" rx="0" fill="none"/>
+    
+    <g transform="translate(210 118)">
+      <ellipse cx="34" cy="0" rx="20" ry="42" fill="#d87991" opacity="0.96" transform="rotate(0 34 0)"/><ellipse cx="21.19865326319694" cy="21.891281509104836" rx="20" ry="42" fill="#f6d7dc" opacity="0.96" transform="rotate(51 21.19865326319694 21.891281509104836)"/><ellipse cx="-7.5657117545146875" cy="27.297981541091062" rx="20" ry="42" fill="#d87991" opacity="0.96" transform="rotate(102 -7.5657117545146875 27.297981541091062)"/><ellipse cx="-30.632941508682247" cy="12.148744695291631" rx="20" ry="42" fill="#f6d7dc" opacity="0.96" transform="rotate(153 -30.632941508682247 12.148744695291631)"/><ellipse cx="-30.63294150868225" cy="-12.148744695291624" rx="20" ry="42" fill="#d87991" opacity="0.96" transform="rotate(204 -30.63294150868225 -12.148744695291624)"/><ellipse cx="-7.565711754514696" cy="-27.297981541091062" rx="20" ry="42" fill="#f6d7dc" opacity="0.96" transform="rotate(255 -7.565711754514696 -27.297981541091062)"/><ellipse cx="21.198653263196935" cy="-21.891281509104836" rx="20" ry="42" fill="#d87991" opacity="0.96" transform="rotate(306 21.198653263196935 -21.891281509104836)"/>
+      <circle cx="0" cy="0" r="18" fill="#d7ae67"/>
+      <path d="M0 44 C-8 74 -30 92 -56 106" stroke="#587563" stroke-width="10" stroke-linecap="round" fill="none"/>
+      <path d="M-28 76 C-58 54 -84 62 -92 92 C-58 98 -40 92 -28 76Z" fill="#8aa58d"/>
+    </g><text x="210" y="245" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#24352f">Лиора</text><text x="210" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#587563" letter-spacing="6">FLOWERS</text>
+  </svg>

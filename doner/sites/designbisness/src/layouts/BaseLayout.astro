@@ -1,0 +1,152 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import "@styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "AURUM — студия дизайна интерьера",
+  description = "Премиальные дизайн-проекты, комплектация, авторский надзор, портфолио по стилям и подробный бриф для будущего интерьера."
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="oklch(0.982 0.012 108)" />
+    <link rel="canonical" href={canonical} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+    <Header currentPath={Astro.url.pathname} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    <script is:inline>
+      const navToggle = document.querySelector("[data-nav-toggle]");
+      const siteHeader = document.querySelector("[data-site-header]");
+
+      navToggle?.addEventListener("click", () => {
+        const open = siteHeader?.classList.toggle("is-open") ?? false;
+        navToggle.setAttribute("aria-expanded", String(open));
+      });
+
+      document.querySelectorAll("[data-nav-link]").forEach((link) => {
+        link.addEventListener("click", () => {
+          siteHeader?.classList.remove("is-open");
+          navToggle?.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      document.querySelectorAll("[data-accordion-trigger]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          const expanded = trigger.getAttribute("aria-expanded") === "true";
+          trigger.setAttribute("aria-expanded", String(!expanded));
+          const panel = document.getElementById(trigger.getAttribute("aria-controls") || "");
+          if (panel) panel.hidden = expanded;
+        });
+      });
+
+      const quiz = document.querySelector("[data-quiz]");
+      if (quiz) {
+        const steps = Array.from(quiz.querySelectorAll("[data-quiz-step]"));
+        const progress = quiz.querySelector("[data-quiz-progress]");
+        const status = quiz.querySelector("[data-quiz-status]");
+        const result = quiz.querySelector("[data-quiz-result]");
+        const resultTitle = quiz.querySelector("[data-result-title]");
+        const resultText = quiz.querySelector("[data-result-text]");
+        let current = 0;
+
+        const copy = {
+          calm: {
+            title: "Вам близок спокойный современный интерьер",
+            text: "Мы бы начали с мягкой нейтральной палитры, натуральных материалов и планировки, где воздух важнее декора."
+          },
+          warm: {
+            title: "Вам подойдет теплый тактильный интерьер",
+            text: "В основе будут дерево, камень, мягкий свет и глубокие природные оттенки без лишней декоративности."
+          },
+          contrast: {
+            title: "Вам нужна выразительная, собранная концепция",
+            text: "Мы предложим контрастные акценты, графичные детали и спокойную базу, чтобы интерьер выглядел сильным, но не перегруженным."
+          }
+        };
+
+        const update = () => {
+          steps.forEach((step, index) => {
+            step.hidden = index !== current;
+          });
+          if (progress) progress.textContent = `${current + 1} / ${steps.length}`;
+          if (status) status.textContent = "";
+        };
+
+        quiz.addEventListener("click", (event) => {
+          const target = event.target;
+          if (!(target instanceof HTMLElement)) return;
+
+          if (target.matches("[data-quiz-prev]")) {
+            current = Math.max(0, current - 1);
+            update();
+          }
+
+          if (target.matches("[data-quiz-next]")) {
+            const selected = steps[current].querySelector("input:checked");
+            if (!selected) {
+              if (status) status.textContent = "Выберите вариант, чтобы продолжить.";
+              return;
+            }
+            if (current < steps.length - 1) {
+              current += 1;
+              update();
+            } else {
+              const palette = quiz.querySelector('input[name="palette"]:checked')?.value || "calm";
+              const selectedCopy = copy[palette] || copy.calm;
+              if (resultTitle) resultTitle.textContent = selectedCopy.title;
+              if (resultText) resultText.textContent = selectedCopy.text;
+              steps.forEach((step) => (step.hidden = true));
+              if (result) result.hidden = false;
+              if (progress) progress.textContent = "Готово";
+            }
+          }
+        });
+
+        update();
+      }
+
+      document.querySelectorAll("[data-brief-form], [data-lead-form]").forEach((form) => {
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const status = form.querySelector("[data-form-status]");
+          const required = Array.from(form.querySelectorAll("[required]"));
+          const invalid = required.find((field) => !field.value || (field.type === "checkbox" && !field.checked));
+
+          if (invalid) {
+            invalid.focus();
+            if (status) status.textContent = "Заполните обязательные поля, отмеченные звездочкой.";
+            return;
+          }
+
+          if (status) status.textContent = "Спасибо. Мы получили данные и свяжемся с вами для уточнения проекта.";
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>

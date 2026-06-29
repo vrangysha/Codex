@@ -1,0 +1,38 @@
+---
+import { CircleCheck, Clock3, ArrowRight } from "@lucide/astro";
+
+interface Props {
+  title: string;
+  description: string;
+  price: string;
+  timing: string;
+  items: string[];
+  featured?: boolean;
+}
+
+const { title, description, price, timing, items, featured = false } = Astro.props;
+---
+
+<article class:list={["package-card", { "is-featured": featured }]}>
+  {featured && <span class="badge">популярно</span>}
+  <div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </div>
+  <ul class="clean-list">
+    {items.map((item) => (
+      <li>
+        <CircleCheck size={16} stroke-width={1.5} />
+        {item}
+      </li>
+    ))}
+  </ul>
+  <p class="card-timing"><Clock3 size={17} stroke-width={1.5} /> {timing}</p>
+  <div class="card-foot">
+    <strong>{price}</strong>
+    <a href="/brief/" aria-label={`Выбрать пакет ${title}`}>
+      Выбрать
+      <ArrowRight size={16} stroke-width={1.5} />
+    </a>
+  </div>
+</article>

@@ -1,0 +1,212 @@
+@media (max-width: 1120px) {
+  .header-inner {
+    grid-template-columns: auto auto 1fr;
+  }
+
+  .nav-toggle {
+    display: block;
+    order: 2;
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .header-actions {
+    order: 3;
+  }
+
+  .site-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 16px 18px;
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 250, 244, 0.98);
+  }
+
+  .site-header.is-open .site-nav {
+    display: flex;
+  }
+
+  .site-nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .product-grid,
+  .grid.four {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .catalog-layout {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: min(100% - 24px, var(--container));
+  }
+
+  .phone-link {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    background:
+      linear-gradient(180deg, rgba(255, 250, 244, 0.96) 0%, rgba(255, 250, 244, 0.78) 48%, rgba(255, 250, 244, 0.42) 100%),
+      url("../assets/images/hero/hero-flower-bouquet.webp") center bottom / cover no-repeat;
+  }
+
+  .hero-content {
+    padding: 64px 0 280px;
+  }
+
+  .hero-proof {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 58px 0;
+  }
+
+  .section-head {
+    grid-template-columns: 1fr;
+  }
+
+  .grid.two,
+  .grid.three,
+  .grid.four,
+  .product-grid,
+  .feature-band,
+  .product-detail,
+  .cart-layout,
+  .checkout-layout,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-panel,
+  .order-panel {
+    position: static;
+  }
+
+  .filter-panel {
+    order: 2;
+  }
+
+  .catalog-results {
+    order: 1;
+  }
+
+  .feature-band img {
+    order: -1;
+  }
+
+  .product-detail-media img {
+    max-height: 720px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-inner {
+    gap: 10px;
+    min-height: 68px;
+  }
+
+  .brand img {
+    width: 128px;
+  }
+
+  .cart-link {
+    min-height: 38px;
+    padding: 0 10px;
+  }
+
+  .cart-link span:first-child {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.9rem, 16vw, 4.2rem);
+  }
+
+  .hero-content {
+    padding: 42px 0 150px;
+  }
+
+  .hero-proof {
+    display: none;
+  }
+
+  .hero-actions,
+  .section-actions,
+  .catalog-toolbar,
+  .footer-bottom {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .icon-button {
+    width: 100%;
+  }
+
+  .range-row,
+  .form-row,
+  .detail-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    grid-template-columns: 84px minmax(0, 1fr);
+  }
+
+  .cart-item img {
+    width: 84px;
+  }
+
+  .cart-item > .cart-line-actions {
+    grid-column: 1 / -1;
+  }
+
+  .promo-line {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding: 48px 0 42px;
+  }
+
+  .map-visual {
+    min-height: 300px;
+  }
+}

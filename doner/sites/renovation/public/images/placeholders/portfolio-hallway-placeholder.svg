@@ -1,0 +1,11 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Hallway portfolio placeholder</title>
+  <desc id="desc">Non-photographic architectural placeholder for a future hallway renovation project.</desc>
+  <rect width="960" height="720" fill="#F7F8F4"/>
+  <rect x="110" y="94" width="740" height="532" rx="30" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M254 154H706L792 566H168L254 154Z" fill="#EEF2EA" stroke="#6D826A" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M360 186H600L644 506H316L360 186Z" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M390 260H570M374 342H586M356 424H604" stroke="#A96938" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="246" cy="552" r="24" fill="#6D826A" opacity=".16"/>
+  <circle cx="714" cy="552" r="24" fill="#A96938" opacity=".16"/>
+</svg>

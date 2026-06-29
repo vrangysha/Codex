@@ -1,0 +1,14 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Kitchen living room portfolio placeholder</title>
+  <desc id="desc">Non-photographic architectural placeholder for a future kitchen living room renovation project.</desc>
+  <rect width="960" height="720" fill="#F7F8F4"/>
+  <rect x="96" y="92" width="768" height="536" rx="30" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M144 184H816" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M144 506H816" stroke="#D9DED2" stroke-width="3"/>
+  <rect x="170" y="228" width="310" height="198" rx="18" fill="#EDF1E8" stroke="#6D826A" stroke-width="4"/>
+  <rect x="522" y="228" width="268" height="198" rx="18" fill="#F4ECE2" stroke="#A96938" stroke-width="4"/>
+  <path d="M206 292H444M206 350H444" stroke="#6D826A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M562 330H750M656 270V394" stroke="#A96938" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="216" cy="550" r="26" fill="#6D826A" opacity=".16"/>
+  <circle cx="744" cy="550" r="26" fill="#A96938" opacity=".16"/>
+</svg>

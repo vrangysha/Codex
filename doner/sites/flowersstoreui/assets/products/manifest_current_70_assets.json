@@ -1,0 +1,19 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 70,
+  "latest_batch": "61-70",
+  "latest_batch_category": "e-commerce product cards / flower types and monobouquets",
+  "files": [
+    "61_monobouquet-red-roses-product-card.webp",
+    "62_monobouquet-white-roses-product-card.webp",
+    "63_monobouquet-pink-peonies-product-card.webp",
+    "64_monobouquet-spring-tulips-product-card.webp",
+    "65_monobouquet-blue-hydrangeas-product-card.webp",
+    "66_bouquet-white-lilies-product-card.webp",
+    "67_bouquet-alstroemeria-product-card.webp",
+    "68_premium-orchid-box-product-card.webp",
+    "69_bouquet-daisies-product-card.webp",
+    "70_author-deluxe-mix-product-card.webp"
+  ],
+  "note": "Each production asset is a separate WebP file. Contact sheets are not included as production assets."
+}

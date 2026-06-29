@@ -1,0 +1,112 @@
+---
+import { Armchair, Eye, MessageCircle } from "@lucide/astro";
+import CTASection from "@components/CTASection.astro";
+import HeroSplit from "@components/HeroSplit.astro";
+import PackageCard from "@components/PackageCard.astro";
+import SectionIntro from "@components/SectionIntro.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { additionalServices, asset, faqs, packages } from "@data/site";
+---
+
+<BaseLayout
+  title="Пакеты услуг — AURUM"
+  description="Пакеты услуг AURUM: планировочное решение, дизайн-проект, комплектация под ключ, авторский надзор и консультации."
+>
+  <HeroSplit
+    eyebrow="Гибкие форматы сотрудничества"
+    title="Пакеты услуг"
+    text="Подберем оптимальное решение под вашу цель, бюджет, сроки и готовность включаться в процесс."
+    image={asset.hero}
+    imageAlt="Гостиная с мягким диваном, деревянными шкафами и теплым светом"
+    primaryHref="/brief/"
+    primaryLabel="Консультация с дизайнером"
+    secondaryHref="/portfolio/"
+    secondaryLabel="Смотреть портфолио"
+    note="Индивидуальный подход к каждому проекту"
+  />
+
+  <section class="section" id="packages">
+    <SectionIntro label="Основные пакеты" title="Формат работы под задачу" />
+    <div class="package-grid">
+      {packages.map((item) => <PackageCard {...item} />)}
+    </div>
+  </section>
+
+  <section class="section" id="compare">
+    <SectionIntro
+      label="Сравнение"
+      title="Что входит в каждый пакет"
+      text="Сравнение помогает быстро понять минимальный и полный объем работ."
+    />
+    <table class="comparison">
+      <thead>
+        <tr>
+          <th>Что входит</th>
+          <th>Планировка</th>
+          <th>Дизайн-проект</th>
+          <th>Под ключ</th>
+        </tr>
+      </thead>
+      <tbody>
+        {[
+          ["Обмерный план", "●", "●", "●"],
+          ["Планировочные решения", "●", "●", "●"],
+          ["План расстановки мебели", "●", "●", "●"],
+          ["3D-визуализации", "—", "●", "●"],
+          ["Рабочая документация", "—", "●", "●"],
+          ["Спецификация материалов", "—", "●", "●"],
+          ["Подбор и закупка", "—", "—", "●"],
+          ["Координация поставщиков", "—", "—", "●"],
+          ["Финальная стилизация", "—", "—", "●"]
+        ].map((row) => (
+          <tr>
+            {row.map((cell) => <td>{cell}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Дополнительно" title="Услуги, которые можно добавить" />
+    <div class="service-grid">
+      {additionalServices.map((service, index) => (
+        <article class="service-tile">
+          {index === 0 && <Eye size={28} stroke-width={1.4} />}
+          {index === 1 && <Armchair size={28} stroke-width={1.4} />}
+          {index === 2 && <MessageCircle size={28} stroke-width={1.4} />}
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          <strong>{service.price}</strong>
+          <a class="button button-outline" href="/brief/">Подробнее</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <SectionIntro label="FAQ" title="Часто задаваемые вопросы" />
+    <div class="faq-list">
+      {faqs.map((item, index) => (
+        <article class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false" aria-controls={`faq-${index}`} data-accordion-trigger>
+            <span>{item.question}</span>
+            <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel" id={`faq-${index}`} hidden>
+            <p>{item.answer}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <CTASection
+    title="Готовы выбрать свой пакет услуг?"
+    text="Расскажите о проекте, и мы подберем оптимальное решение, сроки и состав работ."
+    image={asset.kitchen}
+    imageAlt="Обеденная зона и кухня с натуральным деревом"
+    href="/brief/"
+    label="Рассчитать стоимость"
+  />
+</BaseLayout>

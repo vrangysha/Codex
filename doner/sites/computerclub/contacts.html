@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты | Кибер Арена</title>
+    <meta name="description" content="Адрес, телефон, почта, карта и форма обратной связи компьютерного клуба Кибер Арена.">
+    <link rel="icon" href="cyber-arena-assets/cyber-arena-assets/branding/favicon.ico">
+    <link rel="stylesheet" href="cyber-arena-assets/cyber-arena-assets/tokens/design-tokens.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=form-select2">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Кибер Арена"><img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена"></a>
+        <nav class="main-nav" data-nav aria-label="Основная навигация">
+          <a href="index.html">Главная</a><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a><a href="tournaments.html">Турниры</a><a href="gallery.html">Галерея</a><a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--small" href="booking.html">Забронировать</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false"><img src="cyber-arena-assets/cyber-arena-assets/icons/menu.svg" alt=""></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <img class="page-hero-media" src="cyber-arena-assets/cyber-arena-assets/images/contacts/contact-hero-1600x900.webp" alt="Вход и ресепшен Кибер Арены">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Контакты</span></nav>
+          <span class="eyebrow"><img src="cyber-arena-assets/cyber-arena-assets/icons/map-pin.svg" width="16" height="16" alt=""> Москва, 24/7</span>
+          <h1>Мы рядом, работаем круглосуточно и отвечаем быстро</h1>
+          <p>Позвоните администратору, напишите в почту или оставьте форму для бронирования мероприятия.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-list">
+            <article class="contact-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/map-pin.svg" alt=""></span><div><strong>Адрес</strong><span>г. Москва, Пролетарский проспект, 23А, ТЦ "Аркада", 3 этаж</span></div></article>
+            <article class="contact-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/phone.svg" alt=""></span><div><strong>Телефон</strong><span>+7 (999) 123-45-67</span></div></article>
+            <article class="contact-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/mail.svg" alt=""></span><div><strong>Почта</strong><span>team@cyberarena.ru</span></div></article>
+            <article class="contact-card"><span class="icon-box icon-box--green"><img src="cyber-arena-assets/cyber-arena-assets/icons/clock-24.svg" alt=""></span><div><strong>График</strong><span>Круглосуточно, без выходных</span></div></article>
+          </div>
+          <div class="map-panel map-panel--live">
+            <iframe
+              title="Карта: Пролетарский проспект, 23А"
+              src="https://yandex.ru/map-widget/v1/?ll=37.655792%2C55.637309&amp;pt=37.655792%2C55.637309%2Cpm2rdm&amp;z=17"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">Напишите нам</h2>
+            <p class="section-copy">Для мероприятий, корпоративов и командных сборов лучше оставить пару деталей: дата, количество гостей и желаемый формат.</p>
+            <ul class="plain-list">
+              <li>Ответим по телефону или почте</li>
+              <li>Подскажем свободные зоны</li>
+              <li>Поможем собрать турнирный формат</li>
+            </ul>
+          </div>
+          <form class="form-card" data-demo-form>
+            <h2>Форма связи</h2>
+            <div class="form-grid">
+              <div class="form-field"><label for="name">Имя</label><input id="name" name="name" placeholder="Ваше имя" required></div>
+              <div class="form-field"><label for="phone">Телефон</label><input id="phone" name="phone" placeholder="+7..." required></div>
+              <div class="form-field form-field--full"><label for="topic">Тема</label><select id="topic" name="topic"><option>Бронирование</option><option>Мероприятие</option><option>Турнир</option><option>Вопрос по тарифам</option></select></div>
+              <div class="form-field form-field--full"><label for="message">Сообщение</label><textarea id="message" name="message" placeholder="Расскажите, что нужно подготовить"></textarea></div>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-band">
+            <img src="cyber-arena-assets/cyber-arena-assets/images/cta/cta-background-1920x400.webp" alt="Игровые девайсы">
+            <div class="cta-content"><h2>Уже знаете дату?</h2><p>Перейдите к бронированию и закрепите нужную зону за собой.</p><a class="btn" href="booking.html">Забронировать</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена"><p>Связь с администратором, адрес и карта клуба.</p></div>
+          <div><h3>Меню</h3><div class="footer-links"><a href="index.html">Главная</a><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a></div></div>
+          <div><h3>Соцсети</h3><div class="footer-links"><span>VK</span><span>Telegram</span><span>Discord</span></div></div>
+          <div><h3>Контакты</h3><div class="footer-links"><a href="tel:+79991234567">+7 (999) 123-45-67</a><a href="mailto:team@cyberarena.ru">team@cyberarena.ru</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© <span data-year></span> Кибер Арена</span><a href="booking.html">Бронирование</a></div>
+      </div>
+    </footer>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>

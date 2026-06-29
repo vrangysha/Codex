@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Турниры | Кибер Арена</title>
+    <meta name="description" content="Турниры, ночные кубки, еженедельные события и командные форматы в Кибер Арене.">
+    <link rel="icon" href="cyber-arena-assets/cyber-arena-assets/branding/favicon.ico">
+    <link rel="stylesheet" href="cyber-arena-assets/cyber-arena-assets/tokens/design-tokens.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=form-select2">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Кибер Арена"><img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена"></a>
+        <nav class="main-nav" data-nav aria-label="Основная навигация">
+          <a href="index.html">Главная</a><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a><a href="tournaments.html">Турниры</a><a href="gallery.html">Галерея</a><a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--small" href="booking.html">Забронировать</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false"><img src="cyber-arena-assets/cyber-arena-assets/icons/menu.svg" alt=""></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <img class="page-hero-media" src="cyber-arena-assets/cyber-arena-assets/images/tournaments/cyber-arena-cup-background-1200x900.webp" alt="Турнирный зал Кибер Арены">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Турниры</span></nav>
+          <span class="eyebrow"><img src="cyber-arena-assets/cyber-arena-assets/icons/trophy.svg" width="16" height="16" alt=""> Еженедельные события</span>
+          <h1>Кубки, ночные турниры и фан-вечера для игроков любого уровня</h1>
+          <p>Мы берём на себя сетку, администрирование, трансляцию и атмосферу. Вам остаётся собрать стак и сыграть.</p>
+          <div class="hero-actions"><a class="btn" href="booking.html">Подать заявку</a><a class="btn btn--ghost" href="#calendar">Календарь</a></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div><h2 class="section-title">Ближайшие турниры</h2><p class="section-copy">Форматы обновляются каждую неделю, а призовой фонд зависит от количества участников и партнёров.</p></div>
+          </div>
+          <div class="grid-3">
+            <article class="event-card">
+              <figure><img src="cyber-arena-assets/cyber-arena-assets/images/tournaments/cyber-arena-cup-background-1200x900.webp" alt="Cyber Arena Cup"></figure>
+              <div class="card-body"><span class="tag tag--pink">CS2 5v5</span><h3>Cyber Arena Cup #7</h3><p class="section-copy">Классический командный кубок с групповым этапом и плей-офф.</p><div class="event-prize">150 000 ₽</div><div class="event-meta"><span>25 мая</span><span>18:00</span><span>16 команд</span></div><div class="event-actions"><span>Регистрация открыта</span><a class="btn btn--small" href="booking.html">Участвовать</a></div></div>
+            </article>
+            <article class="event-card">
+              <figure><img src="cyber-arena-assets/cyber-arena-assets/images/tournaments/valorant-night-cup-background-1200x900.webp" alt="Valorant Night Cup"></figure>
+              <div class="card-body"><span class="tag tag--pink">Valorant 5v5</span><h3>Valorant Night Cup</h3><p class="section-copy">Вечерний турнир с короткой сеткой, быстрыми матчами и финалом на сцене.</p><div class="event-prize">100 000 ₽</div><div class="event-meta"><span>31 мая</span><span>19:00</span><span>12 команд</span></div><div class="event-actions"><span>Регистрация открыта</span><a class="btn btn--small" href="booking.html">Участвовать</a></div></div>
+            </article>
+            <article class="event-card">
+              <figure><img src="cyber-arena-assets/cyber-arena-assets/images/generated/booking-arena-banner.webp" alt="Неоновый зал для командного турнира"></figure>
+              <div class="card-body"><span class="tag tag--green">Bootcamp</span><h3>Team Fight Night</h3><p class="section-copy">Закрытая тренировочная ночь для команд с разбором матчей и шоу-матчем.</p><div class="event-prize">30% скидка</div><div class="event-meta"><span>Пятница</span><span>23:00</span><span>5 часов</span></div><div class="event-actions"><span>Места ограничены</span><a class="btn btn--small" href="booking.html">Забронировать</a></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="calendar">
+        <div class="container grid-2">
+          <div>
+            <h2 class="section-title">Календарь недели</h2>
+            <p class="section-copy">Если не хочется ждать большого турнира, приходите на регулярные события. Формат лёгкий: можно прийти одному и найти команду на месте.</p>
+          </div>
+          <aside class="side-panel">
+            <ul class="schedule-list">
+              <li><b>ПН</b><span>Free Play Day: скидка на дневные часы</span></li>
+              <li><b>ВТ</b><span>Dota 2 Cup: быстрый single elimination</span></li>
+              <li><b>СР</b><span>Ladies Night: бонусы на бар и PS5</span></li>
+              <li><b>ЧТ</b><span>1v1 Aim Battle: короткие дуэли</span></li>
+              <li><b>ПТ</b><span>Team Fight Night: командные тренировки</span></li>
+              <li><b>СБ</b><span>CS2 Tournament: главный турнир недели</span></li>
+              <li><b>ВС</b><span>Casual Day: party games и консоли</span></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container grid-3">
+          <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/calendar.svg" alt=""></span><strong>Организация</strong><span>Сетка, расписание и администратор турнира</span></article>
+          <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/streaming.svg" alt=""></span><strong>Трансляция</strong><span>Стрим, запись финалов и клипы</span></article>
+          <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/shield.svg" alt=""></span><strong>Fair play</strong><span>Единые настройки, античит и техподдержка</span></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена"><p>Турниры, командные сборы и вечерние игровые события.</p></div>
+          <div><h3>Меню</h3><div class="footer-links"><a href="index.html">Главная</a><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a></div></div>
+          <div><h3>Форматы</h3><div class="footer-links"><a href="booking.html">CS2 5v5</a><a href="booking.html">Valorant</a><a href="booking.html">Bootcamp</a></div></div>
+          <div><h3>Контакты</h3><div class="footer-links"><a href="tel:+79991234567">+7 (999) 123-45-67</a><a href="booking.html">Подать заявку</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© <span data-year></span> Кибер Арена</span><a href="contacts.html">Контакты</a></div>
+      </div>
+    </footer>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>

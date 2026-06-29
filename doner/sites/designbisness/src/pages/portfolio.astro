@@ -1,0 +1,95 @@
+---
+import { ArrowRight, SlidersHorizontal } from "@lucide/astro";
+import CTASection from "@components/CTASection.astro";
+import HeroSplit from "@components/HeroSplit.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { asset, projects, styles } from "@data/site";
+---
+
+<BaseLayout
+  title="Портфолио по стилям — AURUM"
+  description="Портфолио AURUM по стилям: минимализм, джапанди, неоклассика, современная классика, контемпорари и эклектика."
+>
+  <HeroSplit
+    eyebrow="Интерьеры по стилям"
+    title="Портфолио по стилям"
+    text="Интерьеры, созданные с вниманием к деталям, эстетике и образу жизни наших клиентов."
+    image={asset.hero}
+    imageAlt="Светлая гостиная в спокойной современной стилистике"
+    primaryHref="/brief/"
+    primaryLabel="Проект в похожем стиле"
+    secondaryHref="/services/"
+    secondaryLabel="Смотреть услуги"
+  />
+
+  <section class="section">
+    <div class="portfolio-layout">
+      <aside class="filter-panel" aria-label="Фильтры портфолио">
+        <p class="section-label"><SlidersHorizontal size={14} stroke-width={1.5} /> Фильтры</p>
+        <label class="field">
+          <span>Стиль</span>
+          <select>
+            <option>Все стили</option>
+            <option>Минимализм</option>
+            <option>Джапанди</option>
+            <option>Неоклассика</option>
+            <option>Контемпорари</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Тип помещения</span>
+          <select>
+            <option>Любой</option>
+            <option>Квартира</option>
+            <option>Дом</option>
+            <option>Коммерческое пространство</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Площадь, м²</span>
+          <input type="range" min="20" max="500" value="140" />
+        </label>
+        <a class="button button-light" href="#style-list">Показать проекты</a>
+        <a class="button button-outline" href="/portfolio/">Сбросить фильтры</a>
+      </aside>
+
+      <div id="style-list">
+        {styles.map((style, styleIndex) => (
+          <section class="style-section" aria-labelledby={`style-${styleIndex}`}>
+            <div class="style-summary">
+              <img src={style.image} alt={style.title} loading="lazy" decoding="async" />
+              <div>
+                <h2 id={`style-${styleIndex}`}>{style.title}</h2>
+                <p>{style.description}</p>
+              </div>
+              <a class="button button-light" href="/brief/">
+                Проект в этом стиле
+                <ArrowRight size={16} stroke-width={1.5} />
+              </a>
+            </div>
+            <div class="style-projects">
+              {projects.slice(0, 3).map((project, index) => (
+                <ProjectCard
+                  title={index === 0 ? project.title : `${project.title}`}
+                  meta={project.meta}
+                  image={projects[(index + styleIndex) % projects.length].image}
+                  style={style.title}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Хотите проект в похожем стиле?"
+    text="Расскажите о вашем пространстве и пожеланиях. Мы предложим идеи и решения, которые подойдут именно вам."
+    image={asset.kitchen}
+    imageAlt="Кухня-гостиная с теплым деревом и спокойным светом"
+    href="/brief/"
+    label="Оставить заявку"
+  />
+</BaseLayout>

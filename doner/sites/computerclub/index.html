@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кибер Арена | Компьютерный клуб нового поколения</title>
+    <meta name="description" content="Кибер Арена - компьютерный клуб 24/7 с мощными ПК, VIP-комнатами, PS5, турнирами и быстрым бронированием мест.">
+    <meta property="og:title" content="Кибер Арена">
+    <meta property="og:description" content="Игровые ПК, VIP-комнаты, турниры и киберспортивная атмосфера 24/7.">
+    <meta property="og:image" content="cyber-arena-assets/cyber-arena-assets/branding/og-cover-1200x630.png">
+    <link rel="icon" href="cyber-arena-assets/cyber-arena-assets/branding/favicon.ico">
+    <link rel="stylesheet" href="cyber-arena-assets/cyber-arena-assets/tokens/design-tokens.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=form-select2">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="index.html" aria-label="Кибер Арена">
+            <img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена">
+          </a>
+          <nav class="main-nav" data-nav aria-label="Основная навигация">
+            <a href="index.html">Главная</a>
+            <a href="zones.html">Залы</a>
+            <a href="prices.html">Тарифы</a>
+            <a href="tournaments.html">Турниры</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <div class="header-actions">
+            <a class="btn btn--small" href="booking.html">Забронировать</a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false">
+              <img src="cyber-arena-assets/cyber-arena-assets/icons/menu.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="top">
+          <picture>
+            <source media="(max-width: 760px)" srcset="cyber-arena-assets/cyber-arena-assets/images/hero/hero-mobile-900x1200.webp">
+            <img class="hero-media" src="cyber-arena-assets/cyber-arena-assets/images/hero/hero-desktop-1920x900.webp" alt="Неоновый зал компьютерного клуба Кибер Арена">
+          </picture>
+          <div class="container">
+            <div class="hero-copy">
+              <span class="eyebrow">
+                <img src="cyber-arena-assets/cyber-arena-assets/icons/map-pin.svg" width="16" height="16" alt="">
+                Добро пожаловать в Кибер Арену
+              </span>
+              <h1>Компьютерный клуб <span class="gradient-text">нового поколения</span></h1>
+              <p>Мощные ПК, PlayStation 5, киберспортивный интернет, турниры каждую неделю и комфортная атмосфера для игр, стримов и работы 24/7.</p>
+              <div class="hero-actions">
+                <a class="btn" href="booking.html">
+                  Забронировать место
+                  <img src="cyber-arena-assets/cyber-arena-assets/icons/arrow-right.svg" alt="">
+                </a>
+                <a class="btn btn--ghost" href="prices.html">Посмотреть тарифы</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container hero-badges" aria-label="Ключевые преимущества">
+          <article class="mini-card">
+            <span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/gpu.svg" alt=""></span>
+            <div><strong>Турнирное железо</strong><span>RTX 4070 / 4080</span></div>
+          </article>
+          <article class="mini-card">
+            <span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/wifi.svg" alt=""></span>
+            <div><strong>1 Гбит интернет</strong><span>Низкий пинг</span></div>
+          </article>
+          <article class="mini-card">
+            <span class="icon-box icon-box--green"><img src="cyber-arena-assets/cyber-arena-assets/icons/air.svg" alt=""></span>
+            <div><strong>Комфорт 24/7</strong><span>Кондиционер и вентиляция</span></div>
+          </article>
+          <article class="mini-card">
+            <span class="icon-box icon-box--pink"><img src="cyber-arena-assets/cyber-arena-assets/icons/snack.svg" alt=""></span>
+            <div><strong>Напитки и снеки</strong><span>Бар и кухня</span></div>
+          </article>
+        </section>
+
+        <section class="section section--tight">
+          <div class="container stats-grid">
+            <div class="stat-card"><strong>60+</strong><span>игровых ПК</span></div>
+            <div class="stat-card"><strong>4</strong><span>VIP-комнаты</span></div>
+            <div class="stat-card"><strong>24/7</strong><span>работаем круглосуточно</span></div>
+            <div class="stat-card"><strong>1 Гбит/с</strong><span>интернет-канал</span></div>
+          </div>
+        </section>
+
+        <section class="section" id="zones">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Наши зоны</h2>
+                <p class="section-copy">Выберите пространство под свой стиль игры, настроение и формат команды.</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="zones.html">Все зоны</a>
+            </div>
+            <div class="grid-4">
+              <article class="zone-card">
+                <figure><img src="cyber-arena-assets/cyber-arena-assets/images/zones/zone-standard-1200x800.webp" alt="Standard зона с игровыми ПК"></figure>
+                <div class="card-body">
+                  <div class="card-title-row">
+                    <h3>Standard</h3>
+                    <span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/pc.svg" alt=""></span>
+                  </div>
+                  <p class="section-copy">Оптимальный выбор для ежедневных игр, рейтинга и вечерних сессий.</p>
+                  <ul class="feature-list">
+                    <li>RTX 3060-4070</li>
+                    <li>144-240 Гц мониторы</li>
+                    <li>Механические клавиатуры</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="zone-card">
+                <figure><img src="cyber-arena-assets/cyber-arena-assets/images/zones/zone-vip-1200x800.webp" alt="VIP зона компьютерного клуба"></figure>
+                <div class="card-body">
+                  <div class="card-title-row">
+                    <h3>VIP</h3>
+                    <span class="icon-box icon-box--amber"><img src="cyber-arena-assets/cyber-arena-assets/icons/chair.svg" alt=""></span>
+                  </div>
+                  <p class="section-copy">Закрытые комнаты для глубокого погружения и командной игры.</p>
+                  <ul class="feature-list">
+                    <li>RTX 4070-4080</li>
+                    <li>Личный кондиционер</li>
+                    <li>Премиум кресла</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="zone-card">
+                <figure><img src="cyber-arena-assets/cyber-arena-assets/images/zones/zone-console-ps5-1200x800.webp" alt="Консольная зона PlayStation 5"></figure>
+                <div class="card-body">
+                  <div class="card-title-row">
+                    <h3>Console / PS5</h3>
+                    <span class="icon-box icon-box--pink"><img src="cyber-arena-assets/cyber-arena-assets/icons/gamepad.svg" alt=""></span>
+                  </div>
+                  <p class="section-copy">Консольная зона на PlayStation 5 с большим экраном.</p>
+                  <ul class="feature-list">
+                    <li>PlayStation 5</li>
+                    <li>4K OLED TV</li>
+                    <li>DualSense и party games</li>
+                  </ul>
+                </div>
+              </article>
+              <article class="zone-card">
+                <figure><img src="cyber-arena-assets/cyber-arena-assets/images/zones/zone-bootcamp-1200x800.webp" alt="Bootcamp зона для тренировок"></figure>
+                <div class="card-body">
+                  <div class="card-title-row">
+                    <h3>Bootcamp</h3>
+                    <span class="icon-box icon-box--green"><img src="cyber-arena-assets/cyber-arena-assets/icons/trophy.svg" alt=""></span>
+                  </div>
+                  <p class="section-copy">Командные ряды для тренировок, турниров и киберспортивных сборов.</p>
+                  <ul class="feature-list">
+                    <li>Тренировочная сетка</li>
+                    <li>Тихая зона</li>
+                    <li>Аналитика и разборы</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark" id="prices">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Тарифы</h2>
+                <p class="section-copy">Прозрачные цены без скрытых платежей. Можно прийти на час или забронировать ночь.</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="prices.html">Все тарифы</a>
+            </div>
+            <div class="grid-4">
+              <article class="price-card">
+                <h3>1 час</h3>
+                <p class="section-copy">Стандартный зал</p>
+                <div class="price-value">250 ₽ <span>/ час</span></div>
+                <ul class="feature-list">
+                  <li>Мощный ПК</li>
+                  <li>Игровое кресло</li>
+                  <li>Быстрый интернет</li>
+                </ul>
+                <a class="btn btn--ghost" href="booking.html">Выбрать</a>
+              </article>
+              <article class="price-card">
+                <h3>Ночной пакет</h3>
+                <p class="section-copy">23:00 - 08:00</p>
+                <div class="price-value">799 ₽ <span>/ ночь</span></div>
+                <ul class="feature-list">
+                  <li>Безлимитная игра</li>
+                  <li>Любое место</li>
+                  <li>Напиток в подарок</li>
+                </ul>
+                <a class="btn btn--ghost" href="booking.html">Выбрать</a>
+              </article>
+              <article class="price-card price-card--featured">
+                <span class="price-badge">Популярно</span>
+                <h3>VIP</h3>
+                <p class="section-copy">Для команды и побед</p>
+                <div class="price-value">1200 ₽ <span>/ час</span></div>
+                <ul class="feature-list">
+                  <li>VIP-комната до 6 чел.</li>
+                  <li>Турнирное железо</li>
+                  <li>Личный кондиционер</li>
+                </ul>
+                <a class="btn" href="booking.html">Выбрать</a>
+              </article>
+              <article class="price-card">
+                <h3>PlayStation 5</h3>
+                <p class="section-copy">Console зона</p>
+                <div class="price-value">350 ₽ <span>/ час</span></div>
+                <ul class="feature-list">
+                  <li>PlayStation 5</li>
+                  <li>4K OLED TV</li>
+                  <li>Любимые игры</li>
+                </ul>
+                <a class="btn btn--ghost" href="booking.html">Выбрать</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="events">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Турниры и события</h2>
+                <p class="section-copy">Каждую неделю проводим турниры, фан-вечера и командные сборы.</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="tournaments.html">Смотреть все</a>
+            </div>
+            <div class="grid-3">
+              <article class="event-card">
+                <figure><img src="cyber-arena-assets/cyber-arena-assets/images/tournaments/cyber-arena-cup-background-1200x900.webp" alt="Cyber Arena Cup"></figure>
+                <div class="card-body">
+                  <span class="tag tag--pink">Турнир</span>
+                  <h3>Cyber Arena Cup #7</h3>
+                  <p class="section-copy">CS2 5v5</p>
+                  <div class="event-prize">150 000 ₽</div>
+                  <div class="event-meta"><span>25 мая</span><span>18:00</span></div>
+                  <div class="event-actions"><span>Регистрация открыта</span><a class="btn btn--small" href="booking.html">Участвовать</a></div>
+                </div>
+              </article>
+              <article class="event-card">
+                <figure><img src="cyber-arena-assets/cyber-arena-assets/images/tournaments/valorant-night-cup-background-1200x900.webp" alt="Valorant Night Cup"></figure>
+                <div class="card-body">
+                  <span class="tag tag--pink">Турнир</span>
+                  <h3>Valorant Night Cup</h3>
+                  <p class="section-copy">Valorant 5v5</p>
+                  <div class="event-prize">100 000 ₽</div>
+                  <div class="event-meta"><span>31 мая</span><span>19:00</span></div>
+                  <div class="event-actions"><span>Регистрация открыта</span><a class="btn btn--small" href="booking.html">Участвовать</a></div>
+                </div>
+              </article>
+              <aside class="side-panel">
+                <h3>Monthly Events</h3>
+                <ul class="schedule-list">
+                  <li><b>ПН</b><span>Free Play Day</span></li>
+                  <li><b>ВТ</b><span>Dota 2 Cup</span></li>
+                  <li><b>СР</b><span>Ladies Night</span></li>
+                  <li><b>ЧТ</b><span>1v1 Aim Battle</span></li>
+                  <li><b>ПТ</b><span>Team Fight Night</span></li>
+                  <li><b>СБ</b><span>CS2 Tournament</span></li>
+                  <li><b>ВС</b><span>Casual Day</span></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <p class="section-copy">Мы держим баланс между турнирной производительностью и комфортом обычного вечера с друзьями.</p>
+              </div>
+            </div>
+            <div class="benefits-grid">
+              <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/gpu.svg" alt=""></span><strong>Топовое железо</strong><span>Видеокарты и процессоры для высоких FPS</span></article>
+              <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/headset.svg" alt=""></span><strong>Звук и приватность</strong><span>Удобные гарнитуры и приватные зоны</span></article>
+              <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/wifi.svg" alt=""></span><strong>Стабильный интернет</strong><span>1 Гбит канал и низкий пинг</span></article>
+              <article class="benefit-card"><span class="icon-box icon-box--pink"><img src="cyber-arena-assets/cyber-arena-assets/icons/snack.svg" alt=""></span><strong>Бар и кухня</strong><span>Напитки, снеки и горячие блюда</span></article>
+              <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/gamepad.svg" alt=""></span><strong>Зона отдыха</strong><span>PS5 и настольные игры</span></article>
+              <article class="benefit-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/map-pin.svg" alt=""></span><strong>Стильная локация</strong><span>Отдельные зоны для стримов</span></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="gallery">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Галерея</h2>
+                <p class="section-copy">Реальные зоны клуба, световые сценарии и атмосфера вечерних игр.</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="gallery.html">Смотреть все</a>
+            </div>
+            <div class="gallery-grid">
+              <button class="gallery-card" data-lightbox type="button"><img src="cyber-arena-assets/cyber-arena-assets/images/gallery/gallery-01-1200x800.webp" alt="Игровой зал с неоновой подсветкой"></button>
+              <button class="gallery-card" data-lightbox type="button"><img src="cyber-arena-assets/cyber-arena-assets/images/gallery/gallery-02-1200x800.webp" alt="Ряды игровых компьютеров"></button>
+              <button class="gallery-card" data-lightbox type="button"><img src="cyber-arena-assets/cyber-arena-assets/images/gallery/gallery-03-1200x800.webp" alt="VIP зона клуба"></button>
+              <button class="gallery-card" data-lightbox type="button"><img src="cyber-arena-assets/cyber-arena-assets/images/gallery/gallery-04-1200x800.webp" alt="Командная игровая зона"></button>
+              <button class="gallery-card" data-lightbox type="button"><img src="cyber-arena-assets/cyber-arena-assets/images/gallery/gallery-05-1200x800.webp" alt="Неоновый интерьер клуба"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Отзывы гостей</h2>
+                <p class="section-copy">К нам приходят за стабильным FPS, но возвращаются из-за атмосферы.</p>
+              </div>
+            </div>
+            <div class="grid-3">
+              <article class="testimonial-card">
+                <div class="avatar-row"><img src="cyber-arena-assets/cyber-arena-assets/images/avatars/avatar-alexey-512.webp" alt="Алексей"><div><h3>Алексей</h3><span class="stars">★★★★★</span></div></div>
+                <p>Лучший компьютерный клуб в городе: железо топ, персонал рядом, атмосфера реально цепляет.</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="avatar-row"><img src="cyber-arena-assets/cyber-arena-assets/images/avatars/avatar-maria-512.webp" alt="Мария"><div><h3>Мария</h3><span class="stars">★★★★★</span></div></div>
+                <p>Отличное место для стримов, стабильный интернет и тишина. Спасибо Кибер Арене!</p>
+              </article>
+              <article class="testimonial-card">
+                <div class="avatar-row"><img src="cyber-arena-assets/cyber-arena-assets/images/avatars/avatar-dmitry-512.webp" alt="Дмитрий"><div><h3>Дмитрий</h3><span class="stars">★★★★★</span></div></div>
+                <p>Играем тут командой раз в неделю. VIP-комнаты - супер решение для тренировок.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contacts">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Как нас найти</h2>
+                <p class="section-copy">Мы рядом с метро, работаем без выходных и всегда поможем подобрать место.</p>
+              </div>
+              <a class="btn btn--ghost btn--small" href="contacts.html">Контакты</a>
+            </div>
+            <div class="contact-layout">
+              <div class="contact-list">
+                <article class="contact-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/map-pin.svg" alt=""></span><div><strong>г. Москва</strong><span>Пролетарский проспект, 23А, ТЦ "Аркада", 3 этаж</span></div></article>
+                <article class="contact-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/phone.svg" alt=""></span><div><strong>+7 (999) 123-45-67</strong><span>Администратор клуба</span></div></article>
+                <article class="contact-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/mail.svg" alt=""></span><div><strong>team@cyberarena.ru</strong><span>Почта для вопросов</span></div></article>
+                <article class="contact-card"><span class="icon-box icon-box--green"><img src="cyber-arena-assets/cyber-arena-assets/icons/clock-24.svg" alt=""></span><div><strong>24/7</strong><span>Мы работаем круглосуточно</span></div></article>
+              </div>
+              <div class="map-panel map-panel--live">
+                <iframe
+                  title="Карта: Пролетарский проспект, 23А"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.655792%2C55.637309&amp;pt=37.655792%2C55.637309%2Cpm2rdm&amp;z=17"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--dark">
+          <div class="container">
+            <div class="section-head">
+              <div>
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <p class="section-copy">Коротко о бронировании, документах и правилах посещения.</p>
+              </div>
+            </div>
+            <div class="faq-list">
+              <article class="faq-item" data-faq-item>
+                <button class="faq-question" type="button">Нужно ли бронировать место заранее?<img src="cyber-arena-assets/cyber-arena-assets/icons/chevron-down.svg" alt=""></button>
+                <div class="faq-answer">Бронирование не обязательно, но мы рекомендуем закреплять место заранее, особенно в выходные и вечерние часы.</div>
+              </article>
+              <article class="faq-item" data-faq-item>
+                <button class="faq-question" type="button">Есть ли скидки для студентов?<img src="cyber-arena-assets/cyber-arena-assets/icons/chevron-down.svg" alt=""></button>
+                <div class="faq-answer">Да, действует студенческий тариф в будние дни. Возьмите документ, подтверждающий обучение.</div>
+              </article>
+              <article class="faq-item" data-faq-item>
+                <button class="faq-question" type="button">Можно ли со своей едой и напитками?<img src="cyber-arena-assets/cyber-arena-assets/icons/chevron-down.svg" alt=""></button>
+                <div class="faq-answer">Можно с водой и лёгкими снеками. Горячие блюда и напитки можно заказать в баре клуба.</div>
+              </article>
+              <article class="faq-item" data-faq-item>
+                <button class="faq-question" type="button">Можно ли арендовать зал для мероприятия?<img src="cyber-arena-assets/cyber-arena-assets/icons/chevron-down.svg" alt=""></button>
+                <div class="faq-answer">Да, мы проводим дни рождения, корпоративы, киберспортивные сборы и закрытые турниры.</div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="cta-band">
+              <img src="cyber-arena-assets/cyber-arena-assets/images/cta/cta-background-1920x400.webp" alt="Игровые девайсы в неоновом свете">
+              <div class="cta-content">
+                <h2>Готов играть?</h2>
+                <p>Забронируй место прямо сейчас и окунись в мир киберспорта.</p>
+                <a class="btn" href="booking.html">Забронировать место</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена">
+              <p>Компьютерный клуб с киберспортивным железом, турнирами и круглосуточной атмосферой побед.</p>
+            </div>
+            <div><h3>Меню</h3><div class="footer-links"><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a><a href="tournaments.html">Турниры</a><a href="gallery.html">Галерея</a></div></div>
+            <div><h3>Услуги</h3><div class="footer-links"><a href="zones.html">Аренда ПК</a><a href="zones.html">VIP-комнаты</a><a href="zones.html">PlayStation 5</a><a href="tournaments.html">Стриминг</a></div></div>
+            <div><h3>Контакты</h3><div class="footer-links"><a href="tel:+79991234567">+7 (999) 123-45-67</a><a href="mailto:team@cyberarena.ru">team@cyberarena.ru</a><span>г. Москва, Пролетарский проспект, 23А</span></div></div>
+          </div>
+          <div class="footer-bottom"><span>© <span data-year></span> Кибер Арена. Все права защищены.</span><span>Политика конфиденциальности</span></div>
+        </div>
+      </footer>
+    </div>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>

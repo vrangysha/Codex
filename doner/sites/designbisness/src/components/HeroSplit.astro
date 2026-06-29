@@ -1,0 +1,55 @@
+---
+import { ArrowRight, CirclePlay } from "@lucide/astro";
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  text: string;
+  image: string;
+  imageAlt: string;
+  primaryHref?: string;
+  primaryLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+  note?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  text,
+  image,
+  imageAlt,
+  primaryHref = "/brief/",
+  primaryLabel = "Оставить заявку",
+  secondaryHref,
+  secondaryLabel,
+  note
+} = Astro.props;
+---
+
+<section class="hero-split">
+  <div class="hero-copy">
+    {eyebrow && <p class="kicker">{eyebrow}</p>}
+    <h1>{title}</h1>
+    <p class="hero-lead">{text}</p>
+    <div class="hero-actions">
+      <a class="button button-dark" href={primaryHref}>
+        {primaryLabel}
+        <ArrowRight size={17} stroke-width={1.6} />
+      </a>
+      {secondaryHref && secondaryLabel && (
+        <a class="button button-light" href={secondaryHref}>{secondaryLabel}</a>
+      )}
+    </div>
+    {note && (
+      <p class="hero-note">
+        <CirclePlay size={19} stroke-width={1.4} />
+        {note}
+      </p>
+    )}
+  </div>
+  <div class="hero-media">
+    <img src={image} alt={imageAlt} loading="eager" decoding="async" />
+  </div>
+</section>

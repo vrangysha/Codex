@@ -1,0 +1,58 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 100,
+  "latest_batch": "91-100",
+  "latest_batch_assets": [
+    {
+      "number": 91,
+      "file": "91_page-catalog-hero.webp",
+      "archive_path": "assets/images/pages/91_page-catalog-hero.webp"
+    },
+    {
+      "number": 92,
+      "file": "92_page-product-detail-hero.webp",
+      "archive_path": "assets/images/pages/92_page-product-detail-hero.webp"
+    },
+    {
+      "number": 93,
+      "file": "93_page-cart-empty-illustration.webp",
+      "archive_path": "assets/images/pages/93_page-cart-empty-illustration.webp"
+    },
+    {
+      "number": 94,
+      "file": "94_page-checkout-hero.webp",
+      "archive_path": "assets/images/pages/94_page-checkout-hero.webp"
+    },
+    {
+      "number": 95,
+      "file": "95_page-delivery-payment-hero.webp",
+      "archive_path": "assets/images/pages/95_page-delivery-payment-hero.webp"
+    },
+    {
+      "number": 96,
+      "file": "96_page-sales-promotions-hero.webp",
+      "archive_path": "assets/images/pages/96_page-sales-promotions-hero.webp"
+    },
+    {
+      "number": 97,
+      "file": "97_page-about-florist-team-hero.webp",
+      "archive_path": "assets/images/pages/97_page-about-florist-team-hero.webp"
+    },
+    {
+      "number": 98,
+      "file": "98_page-contacts-map-hero.webp",
+      "archive_path": "assets/images/pages/98_page-contacts-map-hero.webp"
+    },
+    {
+      "number": 99,
+      "file": "99_page-blog-cover.webp",
+      "archive_path": "assets/images/pages/99_page-blog-cover.webp"
+    },
+    {
+      "number": 100,
+      "file": "100_page-faq-help-hero.webp",
+      "archive_path": "assets/images/pages/100_page-faq-help-hero.webp"
+    }
+  ],
+  "note": "Each asset is stored as a separate file. Batch 10 covers inner-page hero/illustration assets for a multi-page flower shop website."
+}

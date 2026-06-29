@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог букетов — Лиора</title>
+  <meta name="description" content="Каталог букетов Лиора: фильтры по цене, цвету, поводу и типу композиции. Доставка цветов по Москве от 2 часов.">
+  <meta property="og:title" content="Каталог букетов Лиора">
+  <meta property="og:description" content="Выберите букет по поводу, оттенку и бюджету.">
+  <meta property="og:image" content="assets/social/og-image.webp">
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Лиора, главная"><img src="assets/logo/logo-horizontal.svg" alt="Лиора"></a>
+      <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <a href="catalog.html" aria-current="page">Каталог</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="promotions.html">Акции</a>
+        <a href="about.html">О нас</a>
+        <a href="blog.html">Блог</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+74951204570">+7 495 120-45-70</a>
+        <a class="cart-link" href="cart.html"><span>Корзина</span><span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Каталог</span></nav>
+        <p class="eyebrow">Каталог</p>
+        <h1>Букеты для любого повода</h1>
+        <p>Фильтруйте композиции по оттенкам, бюджету, поводу и формату. Каждый букет можно заказать с открыткой, упаковкой и доставкой в удобное окно.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container catalog-layout">
+        <aside class="filter-panel">
+          <h2>Фильтры</h2>
+          <form data-catalog-filters>
+            <fieldset class="filter-group">
+              <legend>Цена</legend>
+              <div class="range-row">
+                <label class="field"><span>От</span><input type="number" name="minPrice" value="0" min="0" step="500"></label>
+                <label class="field"><span>До</span><input type="number" name="maxPrice" value="9000" min="0" step="500"></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>Цвет</legend>
+              <label><input type="checkbox" name="color" value="pink"> Розовый</label>
+              <label><input type="checkbox" name="color" value="red"> Красный</label>
+              <label><input type="checkbox" name="color" value="white"> Белый</label>
+              <label><input type="checkbox" name="color" value="cream"> Кремовый</label>
+              <label><input type="checkbox" name="color" value="lavender"> Лавандовый</label>
+              <label><input type="checkbox" name="color" value="green"> Зелёный</label>
+              <label><input type="checkbox" name="color" value="peach"> Персиковый</label>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>Повод</legend>
+              <label><input type="checkbox" name="occasion" value="birthday"> День рождения</label>
+              <label><input type="checkbox" name="occasion" value="date"> Свидание</label>
+              <label><input type="checkbox" name="occasion" value="wedding"> Свадьба</label>
+              <label><input type="checkbox" name="occasion" value="anniversary"> Годовщина</label>
+              <label><input type="checkbox" name="occasion" value="mother"> День матери</label>
+              <label><input type="checkbox" name="occasion" value="corporate"> Корпоративный</label>
+              <label><input type="checkbox" name="occasion" value="just"> Без повода</label>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend>Тип</legend>
+              <label><input type="checkbox" name="type" value="mono"> Монобукет</label>
+              <label><input type="checkbox" name="type" value="mixed"> Смешанный</label>
+              <label><input type="checkbox" name="type" value="author"> Авторский</label>
+            </fieldset>
+            <button class="btn secondary" type="button" data-clear-filters>Сбросить</button>
+          </form>
+        </aside>
+
+        <div class="catalog-results">
+          <div class="catalog-toolbar">
+            <p><strong data-catalog-count>0 товаров</strong> доступно для заказа онлайн</p>
+            <label class="field">
+              <span>Сортировка</span>
+              <select data-catalog-sort>
+                <option value="popular">По популярности</option>
+                <option value="price-asc">Сначала дешевле</option>
+                <option value="price-desc">Сначала дороже</option>
+                <option value="sale">Со скидкой</option>
+              </select>
+            </label>
+          </div>
+          <div class="empty-state" data-catalog-empty>Под эти фильтры ничего не нашлось. Снимите часть условий или напишите нам — соберём букет индивидуально.</div>
+          <div class="product-grid" data-catalog-grid></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><img src="assets/logo/logo-horizontal.svg" alt="Лиора"><p>Цветы, композиции и подарки с доставкой по Москве.</p></div>
+        <div><h3>Покупателям</h3><ul><li><a href="catalog.html">Каталог</a></li><li><a href="delivery.html">Доставка и оплата</a></li><li><a href="promotions.html">Акции</a></li><li><a href="cart.html">Корзина</a></li></ul></div>
+        <div><h3>Лиора</h3><ul><li><a href="about.html">О нас</a></li><li><a href="blog.html">Блог</a></li><li><a href="contacts.html">Контакты</a></li><li><a href="checkout.html">Оформление</a></li></ul></div>
+        <div><h3>Связь</h3><ul><li><a href="tel:+74951204570">+7 495 120-45-70</a></li><li><a href="mailto:hello@liora.flowers">hello@liora.flowers</a></li><li>Москва, Петровка, 24</li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Лиора.</span><span>Свежие букеты каждый день.</span></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/catalog.js" defer></script>
+</body>
+</html>

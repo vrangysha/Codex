@@ -1,0 +1,40 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="900"
+  viewBox="0 0 1200 900"
+  role="img"
+  aria-labelledby="title desc"
+>
+  <title id="title">Demo detail placeholder B</title>
+  <desc id="desc">Neutral placeholder for demo renovation gallery detail B.</desc>
+  <rect width="1200" height="900" fill="#f3f1e8" />
+  <rect
+    x="132"
+    y="132"
+    width="936"
+    height="636"
+    rx="28"
+    fill="#ffffff"
+    stroke="#d8d3c1"
+    stroke-width="3"
+  />
+  <path
+    d="M250 650h700M250 560h240M250 470h320M250 380h410M250 290h520"
+    stroke="#d8d3c1"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+  <rect x="780" y="285" width="170" height="170" rx="20" fill="#2f664c" />
+  <rect x="780" y="500" width="170" height="90" rx="18" fill="#a45b34" />
+  <text
+    x="250"
+    y="224"
+    fill="#26332d"
+    font-family="Arial, sans-serif"
+    font-size="42"
+    font-weight="700"
+  >
+    DEMO GALLERY
+  </text>
+</svg>

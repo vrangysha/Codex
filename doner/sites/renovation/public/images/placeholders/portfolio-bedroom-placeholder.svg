@@ -1,0 +1,13 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Bedroom portfolio placeholder</title>
+  <desc id="desc">Non-photographic architectural placeholder for a future bedroom renovation project.</desc>
+  <rect width="960" height="720" fill="#F7F8F4"/>
+  <rect x="104" y="96" width="752" height="528" rx="30" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <rect x="206" y="234" width="548" height="246" rx="26" fill="#EEF2EA" stroke="#6D826A" stroke-width="4"/>
+  <path d="M206 316H754" stroke="#D9DED2" stroke-width="4"/>
+  <rect x="246" y="254" width="168" height="72" rx="16" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <rect x="546" y="254" width="168" height="72" rx="16" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M164 560H796" stroke="#A96938" stroke-width="5" stroke-linecap="round"/>
+  <path d="M170 182H790" stroke="#D9DED2" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="480" cy="558" r="30" fill="#A96938" opacity=".15"/>
+</svg>

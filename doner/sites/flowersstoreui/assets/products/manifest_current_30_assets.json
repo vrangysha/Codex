@@ -1,0 +1,58 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 30,
+  "latest_batch": "21-30",
+  "latest_batch_assets": [
+    {
+      "number": 21,
+      "file": "21_catalog-banner-bouquets.webp",
+      "archive_path": "assets/images/catalog/21_catalog-banner-bouquets.webp"
+    },
+    {
+      "number": 22,
+      "file": "22_flower-type-roses-category-card.webp",
+      "archive_path": "assets/images/catalog/categories/22_flower-type-roses-category-card.webp"
+    },
+    {
+      "number": 23,
+      "file": "23_flower-type-peonies-category-card.webp",
+      "archive_path": "assets/images/catalog/categories/23_flower-type-peonies-category-card.webp"
+    },
+    {
+      "number": 24,
+      "file": "24_flower-type-tulips-category-card.webp",
+      "archive_path": "assets/images/catalog/categories/24_flower-type-tulips-category-card.webp"
+    },
+    {
+      "number": 25,
+      "file": "25_flower-type-hydrangeas-category-card.webp",
+      "archive_path": "assets/images/catalog/categories/25_flower-type-hydrangeas-category-card.webp"
+    },
+    {
+      "number": 26,
+      "file": "26_collection-seasonal-category-card.webp",
+      "archive_path": "assets/images/catalog/collections/26_collection-seasonal-category-card.webp"
+    },
+    {
+      "number": 27,
+      "file": "27_collection-wedding-category-card.webp",
+      "archive_path": "assets/images/catalog/collections/27_collection-wedding-category-card.webp"
+    },
+    {
+      "number": 28,
+      "file": "28_collection-gift-sets-category-card.webp",
+      "archive_path": "assets/images/catalog/categories/28_collection-gift-sets-category-card.webp"
+    },
+    {
+      "number": 29,
+      "file": "29_collection-premium-packaging-card.webp",
+      "archive_path": "assets/images/catalog/categories/29_collection-premium-packaging-card.webp"
+    },
+    {
+      "number": 30,
+      "file": "30_collection-florist-choice-card.webp",
+      "archive_path": "assets/images/catalog/categories/30_collection-florist-choice-card.webp"
+    }
+  ],
+  "note": "Each asset is stored as a separate file; no contact sheets are included as production assets."
+}

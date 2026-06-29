@@ -1,0 +1,118 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 50,
+  "latest_batch": "41-50",
+  "asset_principle": "Each website asset is a separate file, no merged contact sheets are counted as production assets.",
+  "latest_batch_assets": [
+    {
+      "number": 41,
+      "file": "41_composition-flower-box-pink-card.webp",
+      "archive_path": "assets/images/products/boxes/41_composition-flower-box-pink-card.webp",
+      "category": "composition-box",
+      "title": "Цветы в коробке",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Цветы в коробке в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Цветы в коробке, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 42,
+      "file": "42_composition-basket-pastel-card.webp",
+      "archive_path": "assets/images/products/baskets/42_composition-basket-pastel-card.webp",
+      "category": "composition-basket",
+      "title": "Композиция в корзине",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Композиция в корзине в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Композиция в корзине, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 43,
+      "file": "43_composition-vase-soft-pink-card.webp",
+      "archive_path": "assets/images/products/vases/43_composition-vase-soft-pink-card.webp",
+      "category": "composition-vase",
+      "title": "Композиция в вазе",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Композиция в вазе в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Композиция в вазе, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 44,
+      "file": "44_mini-bouquet-pastel-card.webp",
+      "archive_path": "assets/images/products/bouquets/44_mini-bouquet-pastel-card.webp",
+      "category": "mini-bouquet",
+      "title": "Мини-букет Нежность",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Мини-букет Нежность в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Мини-букет Нежность, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 45,
+      "file": "45_premium-bouquet-deluxe-card.webp",
+      "archive_path": "assets/images/products/bouquets/45_premium-bouquet-deluxe-card.webp",
+      "category": "premium-bouquet",
+      "title": "Премиум-букет Deluxe",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Премиум-букет Deluxe в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Премиум-букет Deluxe, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 46,
+      "file": "46_occasion-birthday-bouquet-card.webp",
+      "archive_path": "assets/images/products/occasions/46_occasion-birthday-bouquet-card.webp",
+      "category": "occasion-birthday",
+      "title": "Букет на день рождения",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Букет на день рождения в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Букет на день рождения, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 47,
+      "file": "47_occasion-march-8-bouquet-card.webp",
+      "archive_path": "assets/images/products/occasions/47_occasion-march-8-bouquet-card.webp",
+      "category": "occasion-march-8",
+      "title": "Букет на 8 Марта",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Букет на 8 Марта в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Букет на 8 Марта, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 48,
+      "file": "48_occasion-mother-day-bouquet-card.webp",
+      "archive_path": "assets/images/products/occasions/48_occasion-mother-day-bouquet-card.webp",
+      "category": "occasion-mother-day",
+      "title": "Букет ко Дню матери",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Букет ко Дню матери в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Букет ко Дню матери, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 49,
+      "file": "49_occasion-valentine-bouquet-card.webp",
+      "archive_path": "assets/images/products/occasions/49_occasion-valentine-bouquet-card.webp",
+      "category": "occasion-valentine",
+      "title": "Романтический букет",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Романтический букет в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Романтический букет, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    },
+    {
+      "number": 50,
+      "file": "50_occasion-corporate-gift-card.webp",
+      "archive_path": "assets/images/products/occasions/50_occasion-corporate-gift-card.webp",
+      "category": "occasion-corporate",
+      "title": "Корпоративный подарок",
+      "format": "WEBP",
+      "size_px": "1200x1600",
+      "alt": "Корпоративный подарок в премиальном стиле Lumi Fleur",
+      "prompt": "Premium ecommerce product card for flower shop Lumi Fleur: Корпоративный подарок, pastel cream pink sage palette, soft studio lighting, clean luxury web design, product photo with commercial layout."
+    }
+  ]
+}

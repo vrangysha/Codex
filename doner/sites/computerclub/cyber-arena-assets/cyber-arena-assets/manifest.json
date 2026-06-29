@@ -1,0 +1,536 @@
+﻿{
+    "project":  "Кибер Арена",
+    "asset_count":  106,
+    "assets":  [
+                   {
+                       "path":  "branding/favicon.ico",
+                       "bytes":  57932,
+                       "extension":  ".ico"
+                   },
+                   {
+                       "path":  "branding/logo-dark.svg",
+                       "bytes":  1331,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "branding/logo-dark@2x.png",
+                       "bytes":  23693,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "branding/logo-light.svg",
+                       "bytes":  1331,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "branding/logo-light@2x.png",
+                       "bytes":  22038,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "branding/logo-mark.svg",
+                       "bytes":  1027,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "branding/logo-mark-512.png",
+                       "bytes":  36215,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "branding/logo-on-dark.svg",
+                       "bytes":  1505,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "branding/logo-on-dark@2x.png",
+                       "bytes":  27284,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "branding/og-cover-1200x630.png",
+                       "bytes":  875902,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "icons/air.svg",
+                       "bytes":  228,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/arrow-right.svg",
+                       "bytes":  199,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/calendar.svg",
+                       "bytes":  248,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/chair.svg",
+                       "bytes":  272,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/check.svg",
+                       "bytes":  192,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/chevron-down.svg",
+                       "bytes":  190,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/clock-24.svg",
+                       "bytes":  264,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/coffee.svg",
+                       "bytes":  270,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/discord.svg",
+                       "bytes":  394,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/gamepad.svg",
+                       "bytes":  343,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/gpu.svg",
+                       "bytes":  302,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/headset.svg",
+                       "bytes":  336,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/icon-sprite.svg",
+                       "bytes":  7817,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/instagram.svg",
+                       "bytes":  314,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/lightning.svg",
+                       "bytes":  208,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/mail.svg",
+                       "bytes":  239,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/map-pin.svg",
+                       "bytes":  257,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/menu.svg",
+                       "bytes":  201,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/pc.svg",
+                       "bytes":  242,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/phone.svg",
+                       "bytes":  268,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/search.svg",
+                       "bytes":  219,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/shield.svg",
+                       "bytes":  252,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/snack.svg",
+                       "bytes":  241,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/star.svg",
+                       "bytes":  242,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/streaming.svg",
+                       "bytes":  243,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/telegram.svg",
+                       "bytes":  219,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/trophy.svg",
+                       "bytes":  282,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/user.svg",
+                       "bytes":  228,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/vk.svg",
+                       "bytes":  307,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/wifi.svg",
+                       "bytes":  307,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "icons/youtube.svg",
+                       "bytes":  390,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "images/avatars/avatar-alexey-512.png",
+                       "bytes":  359885,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/avatars/avatar-alexey-512.webp",
+                       "bytes":  37468,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/avatars/avatar-dmitry-512.png",
+                       "bytes":  352948,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/avatars/avatar-dmitry-512.webp",
+                       "bytes":  32662,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/avatars/avatar-maria-512.png",
+                       "bytes":  371002,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/avatars/avatar-maria-512.webp",
+                       "bytes":  37904,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/contacts/contact-hero-1600x900.png",
+                       "bytes":  1791280,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/contacts/contact-hero-1600x900.webp",
+                       "bytes":  138408,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/cta/cta-background-1920x400.png",
+                       "bytes":  898361,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/cta/cta-background-1920x400.webp",
+                       "bytes":  66660,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-01-1200x800.png",
+                       "bytes":  1461977,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-01-1200x800.webp",
+                       "bytes":  177818,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-02-1200x800.png",
+                       "bytes":  1265674,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-02-1200x800.webp",
+                       "bytes":  122692,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-03-1200x800.png",
+                       "bytes":  1300086,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-03-1200x800.webp",
+                       "bytes":  120910,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-04-1200x800.png",
+                       "bytes":  1256854,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-04-1200x800.webp",
+                       "bytes":  110000,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-05-1200x800.png",
+                       "bytes":  1227312,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/gallery/gallery-05-1200x800.webp",
+                       "bytes":  99206,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/generated/booking-arena-banner.png",
+                       "bytes":  2001385,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/generated/booking-arena-banner.webp",
+                       "bytes":  171432,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/hero/hero-desktop-1920x900.png",
+                       "bytes":  2134745,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/hero/hero-desktop-1920x900.webp",
+                       "bytes":  234032,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/hero/hero-mobile-900x1200.webp",
+                       "bytes":  117276,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/hero/hero-source-reference.png",
+                       "bytes":  1985442,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/tournaments/cyber-arena-cup-background-1200x900.webp",
+                       "bytes":  141156,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/tournaments/cyber-arena-cup-card-reference-900.png",
+                       "bytes":  1129147,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/tournaments/valorant-night-cup-background-1200x900.webp",
+                       "bytes":  126584,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/tournaments/valorant-night-cup-card-reference-900.png",
+                       "bytes":  1081689,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/zones/zone-bootcamp-1200x800.png",
+                       "bytes":  1205054,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/zones/zone-bootcamp-1200x800.webp",
+                       "bytes":  113842,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/zones/zone-console-ps5-1200x800.png",
+                       "bytes":  1338766,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/zones/zone-console-ps5-1200x800.webp",
+                       "bytes":  116746,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/zones/zone-standard-1200x800.png",
+                       "bytes":  1247618,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/zones/zone-standard-1200x800.webp",
+                       "bytes":  120580,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "images/zones/zone-vip-1200x800.png",
+                       "bytes":  1335981,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "images/zones/zone-vip-1200x800.webp",
+                       "bytes":  133252,
+                       "extension":  ".webp"
+                   },
+                   {
+                       "path":  "manifest.json",
+                       "bytes":  20981,
+                       "extension":  ".json"
+                   },
+                   {
+                       "path":  "patterns/cyber-grid.svg",
+                       "bytes":  324,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "patterns/glow-blue.svg",
+                       "bytes":  333,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "patterns/glow-green.svg",
+                       "bytes":  333,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "patterns/glow-magenta.svg",
+                       "bytes":  333,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "patterns/glow-purple.svg",
+                       "bytes":  333,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "patterns/neon-frame.svg",
+                       "bytes":  571,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "patterns/noise-overlay.svg",
+                       "bytes":  368,
+                       "extension":  ".svg"
+                   },
+                   {
+                       "path":  "preview/asset-contact-sheet.png",
+                       "bytes":  1213745,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "README.md",
+                       "bytes":  2808,
+                       "extension":  ".md"
+                   },
+                   {
+                       "path":  "reference/landing-ui-kit-reference.png",
+                       "bytes":  1765673,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/main-page-reference.png",
+                       "bytes":  1268950,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/01-header-hero.png",
+                       "bytes":  177616,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/02-stats.png",
+                       "bytes":  29165,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/03-zones.png",
+                       "bytes":  129127,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/04-pricing.png",
+                       "bytes":  111178,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/05-tournaments.png",
+                       "bytes":  105280,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/06-benefits.png",
+                       "bytes":  65043,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/07-gallery.png",
+                       "bytes":  75018,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/08-testimonials.png",
+                       "bytes":  62685,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/09-contact-map.png",
+                       "bytes":  83905,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/10-faq.png",
+                       "bytes":  72625,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/sections/11-cta-footer.png",
+                       "bytes":  109390,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "reference/ui-kit-reference.png",
+                       "bytes":  616552,
+                       "extension":  ".png"
+                   },
+                   {
+                       "path":  "tokens/design-tokens.css",
+                       "bytes":  1157,
+                       "extension":  ".css"
+                   },
+                   {
+                       "path":  "tokens/design-tokens.json",
+                       "bytes":  1340,
+                       "extension":  ".json"
+                   },
+                   {
+                       "path":  "tokens/tailwind-colors.js",
+                       "bytes":  341,
+                       "extension":  ".js"
+                   }
+               ]
+}

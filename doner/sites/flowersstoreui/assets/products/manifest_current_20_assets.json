@@ -1,0 +1,38 @@
+{
+  "project": "Lumi Fleur flower shop website assets",
+  "count": 20,
+  "batches": [
+    {
+      "batch": "batch_01",
+      "count": 10,
+      "assets": [
+        "assets/logo/logo-main.png",
+        "assets/logo/logo-secondary.png",
+        "assets/logo/brand-icon.png",
+        "assets/favicon/favicon.png",
+        "assets/images/hero/hero-banner-homepage.png",
+        "assets/images/hero/hero-background-homepage.png",
+        "assets/images/hero/hero-bouquet-composition.png",
+        "assets/images/team/florist-with-flowers-photo.png",
+        "assets/images/delivery/delivery-service-photo.png",
+        "assets/images/packaging/premium-packaging-photo.png"
+      ]
+    },
+    {
+      "batch": "batch_02",
+      "count": 10,
+      "assets": [
+        "assets/images/products/bouquets/11_popular-bouquet-peonies-roses.webp",
+        "assets/images/products/gift-sets/12_gift-set-flowers-chocolates.webp",
+        "assets/images/team/13_florist-woman-working.webp",
+        "assets/images/delivery/14_delivery-man-flowers.webp",
+        "assets/images/packaging/15_premium-packaging-boxes.webp",
+        "assets/images/products/collections/16_season-spring-collection.webp",
+        "assets/images/banners/17_promotion-banner-sale-20.webp",
+        "assets/images/ui/18_advantages-icons-block.webp",
+        "assets/images/reviews/19_customer-reviews-block.webp",
+        "assets/images/how-to-order/20_how-to-order-steps.webp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+---
+import { Menu, X } from "@lucide/astro";
+import { navItems } from "@data/site";
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+const isActive = (href: string) => href === "/" ? currentPath === "/" : currentPath.startsWith(href);
+---
+
+<header class="site-header" data-site-header>
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="AURUM, на главную">
+      <span class="brand-mark">AURUM</span>
+      <span class="brand-subtitle">студия интерьера</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+      <Menu class="icon-open" size={22} stroke-width={1.6} />
+      <X class="icon-close" size={22} stroke-width={1.6} />
+    </button>
+
+    <nav class="site-nav" aria-label="Основная навигация">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class:list={["nav-link", { "is-active": isActive(item.href) }]}
+          data-nav-link
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <a class="header-cta" href="/brief/">Оставить заявку</a>
+  </div>
+</header>

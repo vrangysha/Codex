@@ -1,0 +1,166 @@
+---
+import { ArrowRight, ClipboardList, Gem, PenTool, Ruler, ShieldCheck, Sofa } from "@lucide/astro";
+import CTASection from "@components/CTASection.astro";
+import HeroSplit from "@components/HeroSplit.astro";
+import PackageCard from "@components/PackageCard.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+import SectionIntro from "@components/SectionIntro.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { asset, packages, processStages, projects, styles } from "@data/site";
+---
+
+<BaseLayout
+  title="AURUM — дизайн интерьера, который вдохновляет"
+  description="Студия AURUM проектирует премиальные интерьеры, ведет комплектацию и авторский надзор, помогает выбрать стиль и собрать подробный бриф."
+>
+  <HeroSplit
+    eyebrow="Проектируем эстетику вашей жизни"
+    title="Дизайн интерьера, который вдохновляет"
+    text="Создаем продуманные и гармоничные пространства для жизни, учитывая ваш вкус, привычки, ритм дня и образ жизни."
+    image={asset.hero}
+    imageAlt="Светлая гостиная с изогнутым диваном, деревянными панелями и скульптурными светильниками"
+    primaryHref="/portfolio/"
+    primaryLabel="Смотреть проекты"
+    secondaryHref="/brief/"
+    secondaryLabel="Заполнить бриф"
+    note="Смотреть видео о студии"
+  />
+
+  <section class="section">
+    <div class="split-content">
+      <div class="image-panel">
+        <img src={asset.kitchen} alt="Кухня-гостиная с деревянными фасадами, каменным островом и круглым обеденным столом" loading="lazy" decoding="async" />
+      </div>
+      <div>
+        <SectionIntro
+          label="О студии"
+          title="Интерьеры, где эстетика работает на повседневность"
+          text="AURUM — студия интерьерного дизайна премиум-класса. Мы создаем пространства, которые отражают личность владельца, остаются удобными в жизни и реализуются без потери замысла."
+        />
+        <div class="stat-row">
+          <div class="stat">
+            <Gem size={24} stroke-width={1.4} />
+            <strong>8 лет</strong>
+            <span>опыта в дизайне интерьеров</span>
+          </div>
+          <div class="stat">
+            <Sofa size={24} stroke-width={1.4} />
+            <strong>120+</strong>
+            <span>реализованных проектов</span>
+          </div>
+          <div class="stat">
+            <ShieldCheck size={24} stroke-width={1.4} />
+            <strong>под ключ</strong>
+            <span>от идеи до реализации</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro
+      label="Портфолио"
+      title="Реализованные проекты"
+      text="Несколько направлений, в которых мы работаем: от чистого минимализма до спокойной современной классики."
+    />
+    <div class="project-grid">
+      {projects.slice(0, 4).map((project) => <ProjectCard {...project} />)}
+    </div>
+    <p style="margin-top: 1.5rem;">
+      <a class="button button-light" href="/portfolio/">
+        Смотреть все проекты
+        <ArrowRight size={17} stroke-width={1.5} />
+      </a>
+    </p>
+  </section>
+
+  <section class="section">
+    <SectionIntro
+      label="Стили интерьера"
+      title="Направления, в которых мы работаем"
+      text="Мы не копируем стиль ради стиля. Сначала понимаем образ жизни, потом собираем визуальный язык, материалы и сценарии пространства."
+    />
+    <div class="style-grid">
+      {styles.map((style) => (
+        <article class="style-card">
+          <img src={style.image} alt={style.title} loading="lazy" decoding="async" />
+          <div>
+            <h3>{style.title}</h3>
+            <p>{style.description}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section" id="packages">
+    <SectionIntro
+      label="Пакеты услуг"
+      title="Выберите подходящий формат"
+      text="Форматы можно комбинировать. На консультации мы поможем понять, какой объем работ нужен именно вашему проекту."
+    />
+    <div class="package-grid">
+      {packages.map((item) => <PackageCard {...item} />)}
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro
+      label="Этапы работы"
+      title="Прозрачный процесс — от идеи до реализации"
+      text="Каждый этап фиксируется результатом: вы знаете, что уже принято, что находится в работе и какие решения нужны дальше."
+    />
+    <div class="timeline">
+      {processStages.slice(0, 5).map((stage, index) => (
+        <article class="timeline-item" style={`--i:${index}`}>
+          <span class="timeline-index">{String(index + 1).padStart(2, "0")}</span>
+          <h3>{stage.title}</h3>
+          <p>{stage.text}</p>
+          <span>{stage.result}</span>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split-content">
+      <div>
+        <SectionIntro
+          label="Авторский надзор"
+          title="Мы рядом на каждом этапе реализации"
+          text="Контролируем соответствие проекту, решаем вопросы на объекте, согласуем замены и держим вас в курсе процесса."
+        />
+        <div class="feature-row">
+          <div class="feature-cell">
+            <Ruler size={24} stroke-width={1.5} />
+            <h3>Точность</h3>
+            <p>Проверяем соответствие чертежам и спецификациям.</p>
+          </div>
+          <div class="feature-cell">
+            <ClipboardList size={24} stroke-width={1.5} />
+            <h3>Отчеты</h3>
+            <p>Фиксируем статус работ и ключевые комментарии.</p>
+          </div>
+          <div class="feature-cell">
+            <PenTool size={24} stroke-width={1.5} />
+            <h3>Решения</h3>
+            <p>Оперативно подбираем корректные альтернативы.</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-panel">
+        <img src={asset.bedroom} alt="Спальня с деревянными панелями, мягким светом и встроенным хранением" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <CTASection
+    title="Давайте создадим интерьер вашей мечты"
+    text="Оставьте заявку, и мы свяжемся с вами для обсуждения проекта, сроков, бюджета и оптимального формата работы."
+    image={asset.moodboard}
+    imageAlt="Материалы для будущего интерьера: камень, дерево, текстиль и керамика"
+    href="/brief/"
+    label="Заполнить бриф"
+  />
+</BaseLayout>

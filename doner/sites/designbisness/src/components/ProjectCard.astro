@@ -1,0 +1,19 @@
+---
+interface Props {
+  title: string;
+  meta: string;
+  image: string;
+  style?: string;
+}
+
+const { title, meta, image, style } = Astro.props;
+---
+
+<article class="project-card">
+  <a href="/portfolio/" aria-label={`Посмотреть проект ${title}`}>
+    <img src={image} alt={title} loading="lazy" decoding="async" />
+    <span>{style}</span>
+    <h3>{title}</h3>
+    <p>{meta}</p>
+  </a>
+</article>

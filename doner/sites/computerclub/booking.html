@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Бронирование | Кибер Арена</title>
+    <meta name="description" content="Забронируйте игровой ПК, VIP-комнату, PlayStation 5 или bootcamp-зону в компьютерном клубе Кибер Арена.">
+    <link rel="icon" href="cyber-arena-assets/cyber-arena-assets/branding/favicon.ico">
+    <link rel="stylesheet" href="cyber-arena-assets/cyber-arena-assets/tokens/design-tokens.css">
+    <link rel="stylesheet" href="assets/css/styles.css?v=form-select2">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Кибер Арена"><img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена"></a>
+        <nav class="main-nav" data-nav aria-label="Основная навигация">
+          <a href="index.html">Главная</a><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a><a href="tournaments.html">Турниры</a><a href="gallery.html">Галерея</a><a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--small" href="booking.html">Забронировать</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Открыть меню" aria-expanded="false"><img src="cyber-arena-assets/cyber-arena-assets/icons/menu.svg" alt=""></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <img class="page-hero-media" src="cyber-arena-assets/cyber-arena-assets/images/generated/booking-arena-banner.webp" alt="Сгенерированный баннер игрового зала Кибер Арены">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Бронирование</span></nav>
+          <span class="eyebrow"><img src="cyber-arena-assets/cyber-arena-assets/icons/calendar.svg" width="16" height="16" alt=""> Быстрая заявка</span>
+          <h1>Закрепите место, VIP-комнату или турнирный слот заранее</h1>
+          <p>Форма не требует оплаты: администратор подтвердит свободное время, подскажет тариф и ответит на вопросы.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container detail-grid">
+          <form class="form-card" data-demo-form>
+            <h2>Детали бронирования</h2>
+            <div class="form-grid">
+              <div class="form-field"><label for="booking-name">Имя</label><input id="booking-name" name="name" placeholder="Ваше имя" required></div>
+              <div class="form-field"><label for="booking-phone">Телефон</label><input id="booking-phone" name="phone" placeholder="+7..." required></div>
+              <div class="form-field"><label for="booking-zone">Зона</label><select id="booking-zone" name="zone"><option>Standard</option><option>VIP</option><option>Console / PS5</option><option>Bootcamp</option><option>Турнир</option></select></div>
+              <div class="form-field"><label for="booking-guests">Гостей</label><select id="booking-guests" name="guests"><option>1</option><option>2</option><option>3-4</option><option>5-6</option><option>Команда 5v5</option></select></div>
+              <div class="form-field"><label for="booking-date">Дата</label><input id="booking-date" type="date" name="date" required></div>
+              <div class="form-field"><label for="booking-time">Время</label><input id="booking-time" type="time" name="time" required></div>
+              <div class="form-field form-field--full"><label for="booking-comment">Комментарий</label><textarea id="booking-comment" name="comment" placeholder="Игра, желаемое место, дополнительные пожелания"></textarea></div>
+            </div>
+            <button class="btn" type="submit">Отправить заявку</button>
+          </form>
+
+          <div>
+            <div class="generated-banner">
+              <picture>
+                <source srcset="cyber-arena-assets/cyber-arena-assets/images/generated/booking-arena-banner.webp" type="image/webp">
+                <img src="cyber-arena-assets/cyber-arena-assets/images/generated/booking-arena-banner.png" alt="Неоновый игровой зал с рядами ПК">
+              </picture>
+            </div>
+            <div class="side-panel stack-gap-top">
+              <h3>Что будет после отправки</h3>
+              <ul class="plain-list">
+                <li>Мы проверим свободные места на выбранное время</li>
+                <li>Позвоним или напишем для подтверждения</li>
+                <li>Подскажем оптимальный тариф, если выбранный слот занят</li>
+                <li>Для турниров предложим сетку, тайминг и пакет трансляции</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section-head">
+            <div><h2 class="section-title">Популярные сценарии</h2><p class="section-copy">Выберите быстрый ориентир, если пока не уверены в формате.</p></div>
+          </div>
+          <div class="grid-4">
+            <article class="mini-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/pc.svg" alt=""></span><div><strong>Соло рейтинг</strong><span>Standard на 2-3 часа</span></div></article>
+            <article class="mini-card"><span class="icon-box icon-box--pink"><img src="cyber-arena-assets/cyber-arena-assets/icons/chair.svg" alt=""></span><div><strong>День рождения</strong><span>VIP или PS5 Party</span></div></article>
+            <article class="mini-card"><span class="icon-box icon-box--green"><img src="cyber-arena-assets/cyber-arena-assets/icons/trophy.svg" alt=""></span><div><strong>Командная тренировка</strong><span>Bootcamp Day</span></div></article>
+            <article class="mini-card"><span class="icon-box"><img src="cyber-arena-assets/cyber-arena-assets/icons/streaming.svg" alt=""></span><div><strong>Стрим</strong><span>Место со светом и микрофоном</span></div></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div><img src="cyber-arena-assets/cyber-arena-assets/branding/logo-on-dark.svg?v=compact4" alt="Кибер Арена"><p>Быстрое бронирование игрового места, комнаты или турнирного формата.</p></div>
+          <div><h3>Меню</h3><div class="footer-links"><a href="index.html">Главная</a><a href="zones.html">Залы</a><a href="prices.html">Тарифы</a></div></div>
+          <div><h3>Заявки</h3><div class="footer-links"><a href="booking.html">ПК</a><a href="booking.html">VIP</a><a href="booking.html">Турнир</a></div></div>
+          <div><h3>Контакты</h3><div class="footer-links"><a href="tel:+79991234567">+7 (999) 123-45-67</a><a href="mailto:team@cyberarena.ru">team@cyberarena.ru</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© <span data-year></span> Кибер Арена</span><a href="contacts.html">Контакты</a></div>
+      </div>
+    </footer>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+  </body>
+</html>

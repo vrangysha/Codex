@@ -1,0 +1,106 @@
+---
+import { CalendarCheck, CircleCheck, Download, FileText, MessageCircle, ShieldCheck } from "@lucide/astro";
+import CTASection from "@components/CTASection.astro";
+import HeroSplit from "@components/HeroSplit.astro";
+import SectionIntro from "@components/SectionIntro.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { asset, faqs, processStages } from "@data/site";
+---
+
+<BaseLayout
+  title="Этапы работы — AURUM"
+  description="Прозрачный процесс работы AURUM: бриф, обмеры, планировка, концепция, визуализация, документация, комплектация и реализация."
+>
+  <HeroSplit
+    eyebrow="Прозрачный процесс"
+    title="Этапы работы"
+    text="Мы сопровождаем проект от первой встречи до финальной реализации. Каждый этап выстроен так, чтобы вы видели прогресс и понимали, что происходит."
+    image={asset.hero}
+    imageAlt="Светлая гостиная с мягкой мебелью и теплым деревом"
+    primaryHref="/brief/"
+    primaryLabel="Обсудить проект"
+    secondaryHref="/services/"
+    secondaryLabel="Рассчитать стоимость"
+    note="Скачать презентацию о процессе"
+  />
+
+  <section class="section">
+    <SectionIntro
+      label="Как мы работаем"
+      title="От первого разговора до готового пространства"
+      text="Сроки ориентировочные и зависят от площади, сложности объекта, состава услуг и скорости согласований."
+    />
+    <div class="timeline">
+      {processStages.map((stage, index) => (
+        <article class="timeline-item">
+          <span class="timeline-index">{String(index + 1).padStart(2, "0")}</span>
+          <h3>{stage.title}</h3>
+          <p>{stage.text}</p>
+          <span>{stage.result}</span>
+          <p>Срок: {stage.term}</p>
+        </article>
+      ))}
+    </div>
+    <p class="process-note" style="margin-top: 1rem;">
+      <Download size={18} stroke-width={1.5} />
+      Сроки указаны ориентировочно и уточняются после брифа и анализа объекта.
+    </p>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Что вы получаете" title="Контроль, документы и спокойную коммуникацию" />
+    <div class="benefit-grid">
+      <article class="benefit-card">
+        <MessageCircle size={28} stroke-width={1.4} />
+        <h3>Прозрачность</h3>
+        <p>Вы всегда знаете, на каком этапе проект и что будет дальше.</p>
+      </article>
+      <article class="benefit-card">
+        <FileText size={28} stroke-width={1.4} />
+        <h3>Документы и файлы</h3>
+        <p>Материалы передаются в понятном и структурированном виде.</p>
+      </article>
+      <article class="benefit-card">
+        <CalendarCheck size={28} stroke-width={1.4} />
+        <h3>Соблюдение сроков</h3>
+        <p>Фиксируем этапы и держим коммуникацию под контролем.</p>
+      </article>
+      <article class="benefit-card">
+        <ShieldCheck size={28} stroke-width={1.4} />
+        <h3>Контроль бюджета</h3>
+        <p>Согласуем решения заранее и предлагаем оптимальные альтернативы.</p>
+      </article>
+      <article class="benefit-card">
+        <CircleCheck size={28} stroke-width={1.4} />
+        <h3>Ваш комфорт</h3>
+        <p>Объясняем каждый шаг и берем на себя сложную координацию.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="FAQ" title="Сроки и коммуникация" />
+    <div class="faq-list">
+      {faqs.map((item, index) => (
+        <article class="faq-item">
+          <button class="faq-trigger" type="button" aria-expanded="false" aria-controls={`process-faq-${index}`} data-accordion-trigger>
+            <span>{item.question}</span>
+            <span aria-hidden="true">+</span>
+          </button>
+          <div class="faq-panel" id={`process-faq-${index}`} hidden>
+            <p>{item.answer}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <CTASection
+    title="Давайте создадим интерьер, который вдохновляет"
+    text="Оставьте заявку, и мы обсудим задачу, сроки, бюджет и подходящий формат сопровождения."
+    image={asset.bedroom}
+    imageAlt="Готовая спальня с мягким светом и деревянными панелями"
+    href="/brief/"
+    label="Оставить заявку"
+  />
+</BaseLayout>

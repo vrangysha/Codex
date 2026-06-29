@@ -1,0 +1,136 @@
+---
+import { CalendarCheck, ClipboardList, Eye, MessageCircle, ShieldCheck, Sparkles } from "@lucide/astro";
+import CTASection from "@components/CTASection.astro";
+import HeroSplit from "@components/HeroSplit.astro";
+import PackageCard from "@components/PackageCard.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+import SectionIntro from "@components/SectionIntro.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { asset, supervisionSteps } from "@data/site";
+
+const supervisionPackages = [
+  {
+    title: "Базовый",
+    description: "Для небольших объектов и точечных проверок.",
+    price: "от 40 000 ₽ / мес.",
+    timing: "1-2 выезда в месяц",
+    items: ["Выезды по запросу", "Консультации в мессенджере", "Фотоотчет по выездам"]
+  },
+  {
+    title: "Стандарт",
+    description: "Подходит для большинства проектов квартир и домов.",
+    price: "от 70 000 ₽ / мес.",
+    timing: "1-2 выезда в неделю",
+    featured: true,
+    items: ["Регулярные выезды", "Решения на объекте", "Фотоотчет и рекомендации"]
+  },
+  {
+    title: "Премиум",
+    description: "Для сложных и масштабных проектов с большим объемом работ.",
+    price: "от 120 000 ₽ / мес.",
+    timing: "2-3 выезда в неделю",
+    items: ["Личное присутствие дизайнера", "Приоритетная коммуникация", "Расширенная отчетность"]
+  }
+];
+---
+
+<BaseLayout
+  title="Авторский надзор — AURUM"
+  description="Авторский надзор AURUM: контроль качества, соответствие дизайн-проекту, коммуникация с подрядчиками и регулярные отчеты."
+>
+  <HeroSplit
+    eyebrow="Контроль качества, спокойствие, результат"
+    title="Авторский надзор"
+    text="Мы берем на себя контроль реализации проекта, чтобы интерьер был воплощен точно по задумке."
+    image={asset.hero}
+    imageAlt="Современная гостиная в спокойной премиальной палитре"
+    primaryHref="/brief/"
+    primaryLabel="Оставить заявку на надзор"
+    secondaryHref="#details"
+    secondaryLabel="Подробнее об услуге"
+    note="Сопровождаем объект от первых поставок до финального декора"
+  />
+
+  <section class="section" id="details">
+    <SectionIntro label="Что входит" title="Авторский надзор без лишнего шума" />
+    <div class="feature-row">
+      <div class="feature-cell">
+        <Eye size={26} stroke-width={1.4} />
+        <h3>Выезды на объект</h3>
+        <p>Регулярно проверяем ход работ и соответствие проекту.</p>
+      </div>
+      <div class="feature-cell">
+        <ShieldCheck size={26} stroke-width={1.4} />
+        <h3>Контроль соответствия</h3>
+        <p>Проверяем чертежи, узлы, материалы и качество исполнения.</p>
+      </div>
+      <div class="feature-cell">
+        <MessageCircle size={26} stroke-width={1.4} />
+        <h3>Коммуникация</h3>
+        <p>Согласуем решения, координируем подрядчиков и поставщиков.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Преимущества" title="Почему надзор экономит время и бюджет" />
+    <div class="benefit-grid">
+      {[
+        ["Точное воплощение проекта", "Интерьер выглядит именно так, как задумывалось."],
+        ["Экономия времени", "Предотвращаем ошибки и переделки на объекте."],
+        ["Контроль качества", "Материалы, работы и решения соответствуют стандартам."],
+        ["Ваше спокойствие", "Мы берем на себя контроль, вы не погружаетесь в стройку."],
+        ["Профессиональные решения", "Опыт и насмотренность для идеального результата."]
+      ].map(([title, text], index) => (
+        <article class="benefit-card">
+          {index === 0 && <Sparkles size={28} stroke-width={1.4} />}
+          {index === 1 && <CalendarCheck size={28} stroke-width={1.4} />}
+          {index === 2 && <ShieldCheck size={28} stroke-width={1.4} />}
+          {index === 3 && <MessageCircle size={28} stroke-width={1.4} />}
+          {index === 4 && <ClipboardList size={28} stroke-width={1.4} />}
+          <h3>{title}</h3>
+          <p>{text}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Как проходит надзор" title="Регулярный контроль на каждом шаге" />
+    <div class="timeline">
+      {supervisionSteps.map((step, index) => (
+        <article class="timeline-item">
+          <span class="timeline-index">{String(index + 1).padStart(2, "0")}</span>
+          <h3>{step}</h3>
+          <p>{index < 3 ? "Проверяем текущие работы, фиксируем вопросы и согласуем дальнейшие действия." : "Передаем комментарии, фотоотчеты и решения для корректной реализации."}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="На практике" title="От черновых работ к финальному интерьеру" />
+    <div class="project-grid">
+      <ProjectCard title="Исходное состояние" meta="Фиксируем объект до старта" image={asset.renovation} style="Надзор" />
+      <ProjectCard title="Инженерные системы" meta="Проверяем монтаж и узлы" image={asset.renovation} style="Контроль" />
+      <ProjectCard title="Чистовая отделка" meta="Сверяем материалы и качество" image={asset.kitchen} style="Реализация" />
+      <ProjectCard title="Финальный декор" meta="Завершаем образ интерьера" image={asset.bedroom} style="Финиш" />
+    </div>
+  </section>
+
+  <section class="section">
+    <SectionIntro label="Форматы" title="Пакеты авторского надзора" />
+    <div class="package-grid">
+      {supervisionPackages.map((item) => <PackageCard {...item} />)}
+    </div>
+  </section>
+
+  <CTASection
+    title="Мы рядом на каждом этапе, чтобы вы получили интерьер своей мечты"
+    text="Оставьте заявку, и мы обсудим оптимальный формат авторского надзора для вашего проекта."
+    image={asset.bedroom}
+    imageAlt="Готовая спальня после реализации дизайн-проекта"
+    href="/brief/"
+    label="Оставить заявку на надзор"
+  />
+</BaseLayout>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Flower shop icon">
+  <circle cx="48" cy="48" r="45" fill="#f5faf3"/>
+  <circle cx="48" cy="48" r="43" fill="none" stroke="#dce8df" stroke-width="2"/>
+  <path d="M47 67c-2-11 1-20 9-28" fill="none" stroke="#557b61" stroke-width="5" stroke-linecap="round"/>
+  <path d="M45 69c-10-2-17-8-21-18 11-2 19 2 25 13" fill="#88a891"/>
+  <path d="M54 63c8-7 17-9 27-5-5 9-13 13-25 10" fill="#6f9678"/>
+  <ellipse cx="48" cy="31" rx="11" ry="18" fill="#d9aebe" transform="rotate(2 48 31)"/>
+  <ellipse cx="64" cy="43" rx="10" ry="17" fill="#c69bae" transform="rotate(58 64 43)"/>
+  <ellipse cx="58" cy="62" rx="10" ry="17" fill="#ead2dc" transform="rotate(137 58 62)"/>
+  <ellipse cx="38" cy="62" rx="10" ry="17" fill="#d2a3b8" transform="rotate(220 38 62)"/>
+  <ellipse cx="32" cy="43" rx="10" ry="17" fill="#efdbe3" transform="rotate(302 32 43)"/>
+  <circle cx="48" cy="49" r="11" fill="#f1dcc6"/>
+  <circle cx="48" cy="49" r="6" fill="#8f7d55"/>
+</svg>

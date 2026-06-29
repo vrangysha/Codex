@@ -1,0 +1,98 @@
+{
+  "project": "Lumi Fleur flower shop web assets",
+  "current_total_assets": 90,
+  "latest_batch": "81-90",
+  "latest_batch_assets": [
+    {
+      "number": 81,
+      "file": "81_flower-type-chrysanthemums-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из белых хризантем Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/81_flower-type-chrysanthemums-product-card.webp"
+    },
+    {
+      "number": 82,
+      "file": "82_flower-type-gerberas-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из розовых гербер Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/82_flower-type-gerberas-product-card.webp"
+    },
+    {
+      "number": 83,
+      "file": "83_flower-type-eustoma-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из белой эустомы Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/83_flower-type-eustoma-product-card.webp"
+    },
+    {
+      "number": 84,
+      "file": "84_flower-type-irises-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из фиолетовых ирисов Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/84_flower-type-irises-product-card.webp"
+    },
+    {
+      "number": 85,
+      "file": "85_flower-type-sunflowers-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из подсолнухов Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/85_flower-type-sunflowers-product-card.webp"
+    },
+    {
+      "number": 86,
+      "file": "86_flower-type-lavender-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из лаванды Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/86_flower-type-lavender-product-card.webp"
+    },
+    {
+      "number": 87,
+      "file": "87_flower-type-dried-flowers-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка букета из сухоцветов Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/87_flower-type-dried-flowers-product-card.webp"
+    },
+    {
+      "number": 88,
+      "file": "88_bouquet-mixed-composition-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка авторской микс-композиции Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/88_bouquet-mixed-composition-product-card.webp"
+    },
+    {
+      "number": 89,
+      "file": "89_color-bright-mix-bouquet-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка яркого микс-букета Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/89_color-bright-mix-bouquet-product-card.webp"
+    },
+    {
+      "number": 90,
+      "file": "90_color-soft-mix-bouquet-product-card.webp",
+      "category": "product flower-type / color collection card",
+      "format": "WEBP",
+      "size_px": "800x1000",
+      "alt": "Товарная карточка нежного микс-букета Lumi Fleur",
+      "archive_path": "assets/images/products/flower-types/90_color-soft-mix-bouquet-product-card.webp"
+    }
+  ],
+  "note": "Each asset is stored as a separate file; no contact sheets are included as production assets."
+}

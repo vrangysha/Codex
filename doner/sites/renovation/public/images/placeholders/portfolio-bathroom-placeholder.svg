@@ -1,0 +1,11 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Bathroom portfolio placeholder</title>
+  <desc id="desc">Non-photographic architectural placeholder for a future bathroom renovation project.</desc>
+  <rect width="960" height="720" fill="#F7F8F4"/>
+  <rect x="106" y="92" width="748" height="536" rx="30" fill="#FFFFFF" stroke="#D9DED2" stroke-width="3"/>
+  <path d="M158 206H802M158 328H802M158 450H802M286 146V574M480 146V574M674 146V574" stroke="#E4E7DE" stroke-width="3"/>
+  <rect x="190" y="284" width="332" height="180" rx="28" fill="#EEF2EA" stroke="#6D826A" stroke-width="4"/>
+  <path d="M216 372H496" stroke="#6D826A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M594 230C654 230 704 278 704 338V464H584V338C584 278 534 230 594 230Z" fill="#F4ECE2" stroke="#A96938" stroke-width="4"/>
+  <circle cx="644" cy="516" r="28" fill="#A96938" opacity=".16"/>
+</svg>
