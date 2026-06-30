@@ -1,6 +1,6 @@
 # Goal 002: Resident Bot Flow
 
-Status: Ready
+Status: Done
 
 ## Outcome
 
@@ -8,9 +8,13 @@ Status: Ready
 
 ## Acceptance Criteria
 
-- Заявка создается за короткий диалог.
-- Житель может посмотреть свои открытые заявки.
-- Аварийные обращения помечаются приоритетом.
+- Заявка создается за короткий диалог. Done.
+- Житель может посмотреть свои открытые заявки. Done.
+- Аварийные обращения помечаются приоритетом. Done.
+
+## Verification
+
+`py -m unittest discover -s tests` - OK, 4 tests.
 
 ## Prompt
 

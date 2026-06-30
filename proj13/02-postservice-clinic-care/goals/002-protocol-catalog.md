@@ -1,6 +1,6 @@
 # Goal 002: Protocol Catalog
 
-Status: Ready
+Status: Done
 
 ## Outcome
 
@@ -8,9 +8,13 @@ Status: Ready
 
 ## Acceptance Criteria
 
-- Протоколы можно хранить в читаемом формате.
-- Админ может выбрать протокол при создании кейса.
-- Тексты отделены от логики бота.
+- Протоколы можно хранить в читаемом формате. Done.
+- Админ может выбрать протокол при создании кейса. Done.
+- Тексты отделены от логики бота. Done.
+
+## Verification
+
+`py -m unittest discover -s tests` - OK, 4 tests.
 
 ## Prompt
 

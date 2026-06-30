@@ -24,6 +24,7 @@ class ResidentTicket:
     entrance: str
     apartment: str
     comment: str
+    priority: str = "normal"
     photo_urls: tuple[str, ...] = ()
     worker: str | None = None
     result_photo_urls: tuple[str, ...] = ()
@@ -53,6 +54,7 @@ def create_ticket(
     entrance: str,
     apartment: str,
     comment: str,
+    priority: str = "normal",
     photo_urls: tuple[str, ...] = (),
 ) -> ResidentTicket:
     required = [
@@ -66,6 +68,8 @@ def create_ticket(
     ]
     if any(not item.strip() for item in required):
         raise ValueError("resident, category, address and comment are required")
+    if priority not in {"normal", "emergency"}:
+        raise ValueError("priority must be normal or emergency")
 
     return ResidentTicket(
         ticket_id=f"UK-{uuid4().hex[:8].upper()}",
@@ -76,6 +80,7 @@ def create_ticket(
         entrance=entrance.strip(),
         apartment=apartment.strip(),
         comment=comment.strip(),
+        priority=priority,
         photo_urls=tuple(photo_urls),
     )
 

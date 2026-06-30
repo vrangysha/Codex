@@ -18,24 +18,27 @@ Draft PR: `https://github.com/vrangysha/Codex/pull/1`.
 
 1. `01-field-master-dispatcher`
    - Завершенная цель: `goals/001-bootstrap-domain-core.md`
-   - Следующая цель: `goals/002-build-telegram-intake.md`
-   - Статус: доменная модель заявок реализована и покрыта тестами.
+   - Завершенная цель: `goals/002-build-telegram-intake.md`
+   - Следующая цель: `goals/003-admin-panel-and-master-flow.md`
+   - Статус: доменная модель и framework-agnostic intake flow реализованы и покрыты тестами.
 
 2. `02-postservice-clinic-care`
    - Завершенная цель: `goals/001-bootstrap-domain-core.md`
-   - Следующая цель: `goals/002-protocol-catalog.md`
-   - Статус: модель кейсов наблюдения и эскалации реализована и покрыта тестами.
+   - Завершенная цель: `goals/002-protocol-catalog.md`
+   - Следующая цель: `goals/003-admin-escalation-panel.md`
+   - Статус: модель наблюдения, эскалации и каталог утвержденных протоколов реализованы и покрыты тестами.
 
 3. `03-hoa-uk-dispatcher`
    - Завершенная цель: `goals/001-bootstrap-domain-core.md`
-   - Следующая цель: `goals/002-resident-bot-flow.md`
-   - Статус: модель заявок жильцов и показаний счетчиков реализована и покрыта тестами.
+   - Завершенная цель: `goals/002-resident-bot-flow.md`
+   - Следующая цель: `goals/003-dispatcher-panel-and-meter-readings.md`
+   - Статус: модель заявок, показаний и resident bot flow реализованы и покрыты тестами.
 
 ## Проверка
 
-- `01-field-master-dispatcher`: `py -m unittest discover -s tests` - OK, 2 tests.
-- `02-postservice-clinic-care`: `py -m unittest discover -s tests` - OK, 2 tests.
-- `03-hoa-uk-dispatcher`: `py -m unittest discover -s tests` - OK, 2 tests.
+- `01-field-master-dispatcher`: `py -m unittest discover -s tests` - OK, 4 tests.
+- `02-postservice-clinic-care`: `py -m unittest discover -s tests` - OK, 4 tests.
+- `03-hoa-uk-dispatcher`: `py -m unittest discover -s tests` - OK, 4 tests.
 
 ## Процесс подхвата целей
 
@@ -47,4 +50,4 @@ Draft PR: `https://github.com/vrangysha/Codex/pull/1`.
 4. Взять самую раннюю цель без блокеров.
 5. После выполнения обновить goal-файл, prompt-файл при необходимости и handoff.
 
-Последний просмотр папок целей: 2026-06-30. Новых внешних целей не найдено; подхвачены следующие готовые цели: Field Goal 002, Clinic Goal 002, HOA/UK Goal 002.
+Последний просмотр папок целей: 2026-06-30. Новых внешних целей не найдено; подхвачены следующие готовые цели: Field Goal 003, Clinic Goal 003, HOA/UK Goal 003.
