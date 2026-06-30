@@ -12,6 +12,8 @@
 
 Локальный `git`/`gh` в окружении недоступны, поэтому загрузка выполняется через GitHub connector/API. Создана ветка `codex/add-proj13-bots` от `main`; папка `proj13` подготовлена для публикации в этой ветке и draft PR.
 
+Draft PR: `https://github.com/vrangysha/Codex/pull/1`.
+
 ## Проекты
 
 1. `01-field-master-dispatcher`
