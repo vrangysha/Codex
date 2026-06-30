@@ -1,6 +1,6 @@
 # Goal 004: Scheduler And Message Adapter
 
-Status: Ready
+Status: Done
 
 ## Outcome
 
@@ -8,13 +8,16 @@ Status: Ready
 
 ## Acceptance Criteria
 
-- Планировщик возвращает due-события по `CareCase` и текущему времени.
-- Adapter формирует только утвержденные сообщения из протокола, без медицинской генерации.
-- Ответы чек-ина проходят через `evaluate_checkin`.
-- Красные флаги создают `EscalationTicket`.
-- Есть unittest-тесты на due-события, обычный ответ и эскалацию.
+- Планировщик возвращает due-события по `CareCase` и текущему времени. Done.
+- Adapter формирует только утвержденные сообщения из протокола, без медицинской генерации. Done.
+- Ответы чек-ина проходят через `evaluate_checkin`. Done.
+- Красные флаги создают `EscalationTicket`. Done.
+- Есть unittest-тесты на due-события, обычный ответ и эскалацию. Done.
+
+## Verification
+
+`py -m unittest discover -s tests` - OK, 8 tests.
 
 ## Prompt
 
 См. `prompts/goal-prompts.md`, раздел `Goal 004`.
-

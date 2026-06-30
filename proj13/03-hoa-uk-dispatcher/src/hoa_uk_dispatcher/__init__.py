@@ -33,10 +33,16 @@ from .dispatcher import (
     filter_tickets,
     record_campaign_reading,
 )
+from .storage import HoaRepository
+from .bot_adapter import BotEvent, BotResponse, HoaBotAdapter
 
 __all__ = [
+    "BotEvent",
+    "BotResponse",
     "BroadcastAudit",
     "DispatcherNotification",
+    "HoaBotAdapter",
+    "HoaRepository",
     "MeterReading",
     "MeterCollectionCampaign",
     "ResidentDraft",
@@ -63,4 +69,3 @@ __all__ = [
     "restore_draft",
     "start_resident_ticket",
 ]
-

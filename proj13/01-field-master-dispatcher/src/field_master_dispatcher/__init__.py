@@ -18,14 +18,20 @@ from .admin_flow import (
     filter_requests,
     update_from_master,
 )
+from .storage import FieldRepository
+from .telegram_adapter import AdapterResponse, FieldTelegramAdapter, TelegramEvent
 
 __all__ = [
+    "AdapterResponse",
+    "FieldRepository",
+    "FieldTelegramAdapter",
     "IntakeDraft",
     "IntakeStep",
     "MasterProfile",
     "Notification",
     "ServiceRequest",
     "ServiceStatus",
+    "TelegramEvent",
     "assign_master",
     "assign_request_to_master",
     "build_request",
@@ -40,4 +46,3 @@ __all__ = [
     "start_intake",
     "update_from_master",
 ]
-

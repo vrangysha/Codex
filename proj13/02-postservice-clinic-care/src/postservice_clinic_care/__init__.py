@@ -18,12 +18,16 @@ from .escalation import (
     filter_escalations,
     take_escalation,
 )
+from .scheduler import CheckinAdapterResult, ClinicMessageAdapter, DueCheckin, due_checkins
 
 __all__ = [
     "CareCase",
     "CareProtocol",
     "CareStatus",
     "CheckinResult",
+    "CheckinAdapterResult",
+    "ClinicMessageAdapter",
+    "DueCheckin",
     "EscalationEvent",
     "EscalationStatus",
     "EscalationTicket",
@@ -33,9 +37,9 @@ __all__ = [
     "close_escalation",
     "create_escalation",
     "default_catalog",
+    "due_checkins",
     "evaluate_checkin",
     "filter_escalations",
     "register_case",
     "take_escalation",
 ]
-

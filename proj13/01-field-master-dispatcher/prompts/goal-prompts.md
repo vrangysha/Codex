@@ -15,3 +15,7 @@
 ## Goal 004
 
 Добавь persistence и Telegram adapter для диспетчера мастеров. Реализуй repository для черновиков и заявок, затем тонкий adapter, который принимает абстрактные Telegram-события и вызывает уже готовый intake/admin flow. Бизнес-логику не переносить в adapter. Добавь unittest-тесты.
+
+## Goal 005
+
+Собери delivery package для диспетчера мастеров: demo entrypoint, runbook внедрения, integration contract для Telegram/CRM/Google Sheets, README с состоянием MVP. Сохрани dependency-free подход и добавь/обнови тесты при необходимости.

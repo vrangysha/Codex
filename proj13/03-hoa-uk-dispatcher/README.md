@@ -20,10 +20,17 @@ MVP для маленьких ТСЖ/УК: заявки жильцов из до
 В `src/hoa_uk_dispatcher/workflow.py` реализовано доменное ядро: заявка, назначение исполнителя, статусы, закрытие с фото, показания счетчиков и уведомления.
 В `src/hoa_uk_dispatcher/resident_flow.py` реализован resident bot flow: пошаговое создание заявки, сериализация черновика, приоритет аварий и список открытых заявок жильца.
 В `src/hoa_uk_dispatcher/dispatcher.py` реализован dispatcher/meter flow: фильтры очереди, назначение исполнителя, закрытие, кампания показаний и аудит массовых уведомлений.
+В `src/hoa_uk_dispatcher/storage.py` и `bot_adapter.py` реализованы in-memory storage и role-based adapter для жильца, диспетчера и исполнителя.
+
+## Delivery
+
+- `demo.py` - локальный сквозной сценарий.
+- `RUNBOOK.md` - запуск, тесты и операционный порядок.
+- `INTEGRATION_CONTRACT.md` - контракт мессенджера/CRM/таблиц.
+- `.env.example` - переменные для реального внедрения.
 
 Проверка:
 
 ```bash
 python -m unittest discover -s tests
 ```
-

@@ -17,10 +17,17 @@ Telegram-first MVP для маленьких сервисных команд: р
 В `src/field_master_dispatcher/workflow.py` реализовано доменное ядро: заявка, статусы, назначение мастера, смена статуса, карточка администратора и экспорт строки.
 В `src/field_master_dispatcher/intake.py` реализован framework-agnostic intake flow: пошаговый сбор заявки, сериализация черновика и создание доменной заявки.
 В `src/field_master_dispatcher/admin_flow.py` реализован admin/master flow: фильтры очереди, назначение мастера, уведомления и обновление статусов.
+В `src/field_master_dispatcher/storage.py` и `telegram_adapter.py` реализованы in-memory storage и тонкий adapter для подключения Telegram SDK.
+
+## Delivery
+
+- `demo.py` - локальный сквозной сценарий.
+- `RUNBOOK.md` - запуск, тесты и операционный порядок.
+- `INTEGRATION_CONTRACT.md` - контракт Telegram/CRM/Google Sheets.
+- `.env.example` - переменные для реального внедрения.
 
 Проверка:
 
 ```bash
 python -m unittest discover -s tests
 ```
-

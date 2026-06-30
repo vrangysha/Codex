@@ -10,16 +10,20 @@
 - Реализована Goal 001: доменная модель постсервисного наблюдения.
 - Реализована Goal 002: каталог утвержденных протоколов по направлениям.
 - Реализована Goal 003: очередь эскалаций с историей действий.
+- Реализована Goal 004: scheduler и message adapter.
+- Реализована Goal 005: delivery package, demo, runbook и integration contract.
 
 ## Завершенные цели
 
 - `goals/001-bootstrap-domain-core.md` - `Done`
 - `goals/002-protocol-catalog.md` - `Done`
 - `goals/003-admin-escalation-panel.md` - `Done`
+- `goals/004-scheduler-and-message-adapter.md` - `Done`
+- `goals/005-delivery-package.md` - `Done`
 
-## Следующий шаг
+## Статус MVP
 
-Взять `goals/004-scheduler-and-message-adapter.md`: добавить планировщик чек-инов и тонкий message adapter поверх протоколов/эскалаций.
+MVP package complete. Следующий слой - production hardening: реальная БД, message provider, CRM/МИС adapters, авторизация админов, журналирование и deploy.
 
 ## Открытые вопросы
 

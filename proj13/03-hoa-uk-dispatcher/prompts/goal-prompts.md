@@ -15,3 +15,7 @@
 ## Goal 004
 
 Добавь storage и bot adapter для ТСЖ/УК. Реализуй repository для resident drafts, заявок, показаний и audit-рассылок. Затем сделай тонкий adapter для ролей житель/диспетчер/исполнитель, который вызывает готовые resident_flow и dispatcher функции. Бизнес-логику не переносить в adapter. Добавь unittest-тесты.
+
+## Goal 005
+
+Собери delivery package для бота ТСЖ/УК: demo entrypoint, runbook внедрения, integration contract для мессенджера/таблиц/CRM УК, README с состоянием MVP и ролями. Сохрани dependency-free подход.
