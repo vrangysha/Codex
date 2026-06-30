@@ -1,0 +1,71 @@
+"""Domain core for HOA and property management dispatcher."""
+
+from .workflow import (
+    MeterReading,
+    ResidentTicket,
+    TicketStatus,
+    assign_worker,
+    build_broadcast,
+    build_resident_status_message,
+    close_ticket,
+    create_ticket,
+    record_meter_reading,
+)
+from .resident_flow import (
+    ResidentDraft,
+    ResidentStep,
+    build_ticket,
+    list_open_tickets,
+    priority_for_category,
+    record_answer,
+    restore_draft,
+    start_resident_ticket,
+)
+from .dispatcher import (
+    BroadcastAudit,
+    DispatcherNotification,
+    MeterCollectionCampaign,
+    WorkerProfile,
+    assign_ticket_to_worker,
+    close_ticket_with_result,
+    create_broadcast_audit,
+    create_meter_collection_campaign,
+    filter_tickets,
+    record_campaign_reading,
+)
+from .storage import HoaRepository
+from .bot_adapter import BotEvent, BotResponse, HoaBotAdapter
+
+__all__ = [
+    "BotEvent",
+    "BotResponse",
+    "BroadcastAudit",
+    "DispatcherNotification",
+    "HoaBotAdapter",
+    "HoaRepository",
+    "MeterReading",
+    "MeterCollectionCampaign",
+    "ResidentDraft",
+    "ResidentStep",
+    "ResidentTicket",
+    "TicketStatus",
+    "WorkerProfile",
+    "assign_worker",
+    "assign_ticket_to_worker",
+    "build_broadcast",
+    "build_ticket",
+    "build_resident_status_message",
+    "close_ticket",
+    "close_ticket_with_result",
+    "create_ticket",
+    "create_broadcast_audit",
+    "create_meter_collection_campaign",
+    "filter_tickets",
+    "list_open_tickets",
+    "priority_for_category",
+    "record_campaign_reading",
+    "record_answer",
+    "record_meter_reading",
+    "restore_draft",
+    "start_resident_ticket",
+]
