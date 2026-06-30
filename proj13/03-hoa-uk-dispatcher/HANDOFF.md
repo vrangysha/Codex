@@ -9,15 +9,17 @@
 - Создан список промптов в `prompts/goal-prompts.md`.
 - Реализована Goal 001: доменная модель заявки жильца.
 - Реализована Goal 002: resident bot flow с сериализацией черновика, приоритетом аварий и просмотром открытых заявок.
+- Реализована Goal 003: dispatcher/meter flow, назначение исполнителей, закрытие с фото и аудит рассылок.
 
 ## Завершенные цели
 
 - `goals/001-bootstrap-domain-core.md` - `Done`
 - `goals/002-resident-bot-flow.md` - `Done`
+- `goals/003-dispatcher-panel-and-meter-readings.md` - `Done`
 
 ## Следующий шаг
 
-Взять `goals/003-dispatcher-panel-and-meter-readings.md`: очередь заявок, назначение исполнителей, закрытие с фото, сбор показаний и массовые уведомления.
+Взять `goals/004-storage-and-bot-adapter.md`: добавить хранилище заявок/показаний и тонкий bot adapter для жильца/диспетчера.
 
 ## Открытые вопросы
 

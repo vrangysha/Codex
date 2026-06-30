@@ -1,6 +1,6 @@
 # Goal 003: Admin Escalation Panel
 
-Status: Ready
+Status: Done
 
 ## Outcome
 
@@ -8,9 +8,13 @@ Status: Ready
 
 ## Acceptance Criteria
 
-- Красные флаги попадают в отдельную очередь.
-- Есть статусы эскалации: новая, взята, закрыта.
-- История действий сохраняется для аудита.
+- Красные флаги попадают в отдельную очередь. Done.
+- Есть статусы эскалации: новая, взята, закрыта. Done.
+- История действий сохраняется для аудита. Done.
+
+## Verification
+
+`py -m unittest discover -s tests` - OK, 6 tests.
 
 ## Prompt
 

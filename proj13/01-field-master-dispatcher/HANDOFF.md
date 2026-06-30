@@ -9,15 +9,17 @@
 - Создан список промптов в `prompts/goal-prompts.md`.
 - Реализована Goal 001: доменное ядро заявки и статусов.
 - Реализована Goal 002: framework-agnostic Telegram intake flow с сериализацией черновика.
+- Реализована Goal 003: admin/master flow, фильтры очереди и уведомления.
 
 ## Завершенные цели
 
 - `goals/001-bootstrap-domain-core.md` - `Done`
 - `goals/002-build-telegram-intake.md` - `Done`
+- `goals/003-admin-panel-and-master-flow.md` - `Done`
 
 ## Следующий шаг
 
-Взять `goals/003-admin-panel-and-master-flow.md`: минимальная админ-панель и поток мастера. Отдельной технической задачей добавить persistence-обертку поверх SQLite/JSON до подключения Telegram.
+Взять `goals/004-persistence-and-telegram-adapter.md`: добавить хранилище черновиков/заявок и тонкий Telegram adapter поверх готовых flow-функций.
 
 ## Открытые вопросы
 
