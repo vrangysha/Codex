@@ -1,0 +1,9 @@
+[project]
+name = "field-master-dispatcher"
+version = "0.1.0"
+description = "Telegram-first dispatcher MVP for field service teams"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
