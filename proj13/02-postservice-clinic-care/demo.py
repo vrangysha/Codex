@@ -1,6 +1,10 @@
 """Local demo for the postservice clinic care MVP."""
 
+import sys
 from datetime import timedelta
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
 
 from postservice_clinic_care.protocols import default_catalog
 from postservice_clinic_care.scheduler import ClinicMessageAdapter, due_checkins
@@ -37,4 +41,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

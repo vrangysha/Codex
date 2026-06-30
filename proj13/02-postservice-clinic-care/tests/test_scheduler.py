@@ -1,5 +1,9 @@
+import sys
 import unittest
 from datetime import timedelta
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from postservice_clinic_care.protocols import default_catalog
 from postservice_clinic_care.scheduler import ClinicMessageAdapter, due_checkins
@@ -41,4 +45,3 @@ class SchedulerAdapterTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

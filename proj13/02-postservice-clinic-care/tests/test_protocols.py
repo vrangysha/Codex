@@ -1,4 +1,8 @@
+import sys
 import unittest
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from postservice_clinic_care.protocols import default_catalog
 from postservice_clinic_care.workflow import CareStatus, evaluate_checkin
@@ -31,4 +35,3 @@ class ProtocolCatalogTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

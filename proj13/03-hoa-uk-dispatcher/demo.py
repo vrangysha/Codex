@@ -1,5 +1,10 @@
 """Local demo for the HOA/UK dispatcher MVP."""
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+
 from hoa_uk_dispatcher.bot_adapter import BotEvent, HoaBotAdapter
 from hoa_uk_dispatcher.dispatcher import WorkerProfile
 from hoa_uk_dispatcher.storage import HoaRepository
@@ -29,4 +34,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

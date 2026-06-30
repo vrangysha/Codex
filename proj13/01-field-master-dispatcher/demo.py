@@ -1,5 +1,10 @@
 """Local demo for the field master dispatcher MVP."""
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent / "src"))
+
 from field_master_dispatcher.admin_flow import MasterProfile, assign_request_to_master
 from field_master_dispatcher.storage import FieldRepository
 from field_master_dispatcher.telegram_adapter import FieldTelegramAdapter, TelegramEvent
@@ -39,4 +44,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
